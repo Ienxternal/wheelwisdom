@@ -25,7 +25,7 @@ Vehicle.init(
         },
         body: {
             type: DataTypes.TEXT,
-            allowNull: true, 
+            allowNull: true, // Assuming that the 'body' field is optional, change this if it's required.
         },
         status: {
             type: DataTypes.STRING,
