@@ -34,5 +34,3 @@ Vehicle.init(
 );
 
 module.exports = Vehicle;
-
-module.exports = Gallery;
