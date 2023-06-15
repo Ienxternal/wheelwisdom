@@ -1,5 +1,6 @@
+const sequelize = require('../config/connection');
 const User = require('./User');
-const Vehicle = require('./Vehicle');
+const Vehicle = require('./Vehicles');
 const Review = require('./Reviews');
 
 User.hasMany(Review, {
@@ -25,3 +26,5 @@ module.exports = {
     Vehicle,
     Review,
 };
+
+sequelize.sync()

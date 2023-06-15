@@ -1,7 +1,6 @@
 const { Model, DataTypes } = require('sequelize');
 const bcrypt = require('bcrypt');
 const sequelize = require('../config/connection');
-const Review = require('./Reviews');
 
 class User extends Model {
   checkPassword(loginPw) {
@@ -36,14 +35,6 @@ User.init(
         len: [8],
       },
     },
-    // reviews: {
-    //   type: Datatype.STRING,
-    //   allowNull: false,
-    //   reference:{
-    //     model:"reviews",
-    //     key
-    //   }
-    // },
   },
   {
     hooks: {

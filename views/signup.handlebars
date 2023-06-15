@@ -1,219 +1,56 @@
-<form
-  class="grid bg-[conic-gradient(at_bottom_right,_var(--tw-gradient-stops))] from-cyan-200 via-yellow-100 to-teal-100 lg:gap-x-12 lg:justify-center"
->
-<!--title-->
-  <h2 class="text-base mt-36 font-semibold leading-7 text-[#F59F20]">Create a
-    Profile</h2>
-  <!--pasword create-->
-  <div class="space-y-12">
-    <div class="border-b border-gray-900/10 pb-12">
+<form class="form signup-form">
+  <!-- component -->
+<div class="bg-grey-lighter min-h-screen flex flex-col">
+            <div class="container max-w-md mx-auto flex-1 flex flex-col items-center justify-center px-2">
+                <div class="bg-white px-6 py-8 rounded shadow-md text-black w-full">
+                    <h1 class="mb-8 text-3xl text-center">Sign up</h1>
+                    <input 
+                        type="text"
+                        class="block border border-grey-light w-full p-3 rounded mb-4"
+                        name="fullname"
+                        placeholder="Full Name" />
 
-      <div class="mt-3 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
-        <div class="sm:col-span-4">
-          <label
-            for="username"
-            class="block text-sm font-medium leading-6 text-gray-900"
-          >Username</label>
-          <div class="mt-2">
-            <div
-              class="flex rounded-md shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-600 sm:max-w-md"
-            >
-              <input
-                type="text"
-                name="username"
-                id="username"
-                autocomplete="username"
-                class="block flex-1 border-0 py-1.5 pl-3 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-12"
-                placeholder="janesmith"
-              />
+                    <input 
+                        type="text"
+                        class="block border border-grey-light w-full p-3 rounded mb-4"
+                        name="email"
+                        placeholder="Email" />
+
+                    <input 
+                        type="password"
+                        class="block border border-grey-light w-full p-3 rounded mb-4"
+                        name="password"
+                        placeholder="Password" />
+                    <input 
+                        type="password"
+                        class="block border border-grey-light w-full p-3 rounded mb-4"
+                        name="confirm_password"
+                        placeholder="Confirm Password" />
+
+                    <button
+                        type="submit"
+                        class="w-full text-center rounded-full bg-tealowl4 px-3.5 py-2 text-sm font-semibold text-white shadow-sm transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-tealowl2 duration-300  focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-tealowl2"
+                    >Create Account</button>
+                    </form>
+
+                    <div class="text-center text-sm text-grey-dark mt-4">
+                        By signing up, you agree to the 
+                        <a class="no-underline border-b border-grey-dark text-grey-dark" href="#">
+                            Terms of Service
+                        </a> and 
+                        <a class="no-underline border-b border-grey-dark text-grey-dark" href="#">
+                            Privacy Policy
+                        </a>
+                    </div>
+                </div>
+
+                <div class="text-grey-dark mt-6">
+                    Already have an account? 
+                    <a class="no-underline border-b border-blue text-blue" href="../login/">
+                        Log in
+                    </a>.
+                </div>
             </div>
-          </div>
-          <label
-            for="password"
-            class="block text-sm font-medium leading-6 text-gray-900"
-          >Passowrd</label>
-          <div class="mt-2">
-            <div
-              class="flex rounded-md shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-600 sm:max-w-md"
-            >
-              <input
-                type="text"
-                name="username"
-                id="password1"
-                class="block flex-1 border-0 py-1.5 pl-3 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-12"
-                placeholder="janesmith"
-              />
-            </div>
-          </div>
-          <label
-            for="password"
-            class="block text-sm font-medium leading-6 text-gray-900"
-          >Confrm Password</label>
-          <div class="mt-2">
-            <div
-              class="flex rounded-md shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-600 sm:max-w-md"
-            >
-              <input
-                type="text"
-                name="username"
-                id="password2"
-                class="block flex-1 border-0 py-1.5 pl-1 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-12"
-                placeholder="janesmith"
-              />
-            </div>
-          </div>
         </div>
-      </div>
-    </div>
-  </div>
-  <!--personal info-->
-  <div class="border-b border-gray-900/10 pb-12">
-    <h2 class="text-base font-semibold leading-7 text-[#F59F20]">Personal
-      Information</h2>
-    <p class="mt-1 text-sm leading-6 text-gray-600">Use a permanent address
-      where you can receive mail.</p>
 
-    <div class="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
-      <div class="sm:col-span-3">
-        <label
-          for="first-name"
-          class="block text-sm font-medium leading-6 text-gray-900"
-        >First name</label>
-        <div class="mt-2">
-          <input
-            type="text"
-            name="first-name"
-            id="first-name"
-            autocomplete="given-name"
-            class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-          />
-        </div>
-      </div>
-
-      <div class="sm:col-span-3">
-        <label
-          for="last-name"
-          class="block text-sm font-medium leading-6 text-gray-900"
-        >Last name</label>
-        <div class="mt-2">
-          <input
-            type="text"
-            name="last-name"
-            id="last-name"
-            autocomplete="family-name"
-            class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-          />
-        </div>
-      </div>
-
-      <div class="sm:col-span-4">
-        <label
-          for="email"
-          class="block text-sm font-medium leading-6 text-gray-900"
-        >Email address</label>
-        <div class="mt-2">
-          <input
-            id="email"
-            name="email"
-            type="email"
-            autocomplete="email"
-            class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-          />
-        </div>
-      </div>
-
-      <div class="sm:col-span-3">
-        <label
-          for="country"
-          class="block text-sm font-medium leading-6 text-gray-900"
-        >Country</label>
-        <div class="mt-2">
-          <select
-            id="country"
-            name="country"
-            autocomplete="country-name"
-            class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:max-w-xs sm:text-sm sm:leading-6"
-          >
-            <option>United States</option>
-            <option>Canada</option>
-            <option>Mexico</option>
-          </select>
-        </div>
-      </div>
-
-      <div class="col-span-full">
-        <label
-          for="street-address"
-          class="block text-sm font-medium leading-6 text-gray-900"
-        >Street address</label>
-        <div class="mt-2">
-          <input
-            type="text"
-            name="street-address"
-            id="street-address"
-            autocomplete="street-address"
-            class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-          />
-        </div>
-      </div>
-
-      <div class="sm:col-span-2 sm:col-start-1">
-        <label
-          for="city"
-          class="block text-sm font-medium leading-6 text-gray-900"
-        >City</label>
-        <div class="mt-2">
-          <input
-            type="text"
-            name="city"
-            id="city"
-            autocomplete="address-level2"
-            class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-          />
-        </div>
-      </div>
-
-      <div class="sm:col-span-2">
-        <label
-          for="region"
-          class="block text-sm font-medium leading-6 text-gray-900"
-        >State / Province</label>
-        <div class="mt-2">
-          <input
-            type="text"
-            name="region"
-            id="region"
-            autocomplete="address-level1"
-            class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-          />
-        </div>
-      </div>
-
-      <div class="col-span-full">
-        <label
-          for="postal-code"
-          class="block text-sm font-medium leading-6 text-gray-900"
-        >ZIP / Postal code</label>
-        <div class="mt-2">
-          <input
-            type="text"
-            name="postal-code"
-            id="postal-code"
-            autocomplete="postal-code"
-            class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-          />
-        </div>
-        <div class="mt-6 w-full flex items-center justify-center gap-x-6">
-          <button
-            type="button"
-            class="text-sm font-semibold leading-6 text-gray-900"
-          >Cancel</button>
-          <button
-            type="submit"
-            class="rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-          >Save</button>
-        </div>
-      </div>
-    </div>
-  </div>
-</form>
+        <script src="./js/signup.js"></script>

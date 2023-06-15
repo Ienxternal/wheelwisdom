@@ -3,30 +3,48 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="/css/output.css">
+  <link rel="stylesheet" href="/css/output.css">
 </head>
 <body>
 
- <header class="bg-tealowl">
-        <nav class="mx-auto flex max-w-8xl items-center justify-between p-2 lg:px-8" aria-label="Global">
-          <div class="flex lg:flex-1">
-            <a href="/" class="-m-1.5 p-1.5">
-              <span class="sr-only">Wheel Wisdom</span>
-              <img class="h-11 w-auto" src="/images/owls1icon.png" alt="">
-            </a>
-          </div>
-
-<!-- Two buttons for navigation -->
-            {{#if loggedIn}}
-              <button id="logout" class="rounded-full bg-tealowl4 px-3.5 py-2 text-sm font-semibold text-white shadow-sm transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-tealowl2 duration-300  focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-tealowl2">Logout</button>
-            {{else}}
-              <div class="lg:flex lg:gap-x-12 lg:justify-end">
-                <a href="/signup" type="button" class="rounded-full bg-tealowl4 px-3.5 py-2 text-sm font-semibold text-white shadow-sm transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-tealowl2 duration-300  focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-tealowl2">Sign Up</a>
-                <a href="/login" type="button" class="rounded-full bg-tealowl4 px-3.5 py-2 text-sm font-semibold text-white shadow-sm transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-tealowl2 duration-300  focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-tealowl2">Login</a>
+    <header class="relative">
+      <div class="bg-tealowl py-2">
+        <nav class="relative mx-1 flex max-w-8xl items-center justify-between px-6" aria-label="Global">
+          <div class="flex flex-1 items-center">
+            <div class="flex w-full items-center justify-between md:w-auto">
+              <a href="/">
+                <span class="sr-only">Your Company</span>
+                <img class="h-8 w-auto sm:h-10" src="/images/owls1icon.png" alt="">
+              </a>
+              <div class="-mr-2 flex items-center md:hidden">
+                <button type="button" class="focus-ring-inset inline-flex items-center justify-center rounded-md bg-gray-900 p-2 text-gray-400 hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-white" aria-expanded="false">
+                  <span class="sr-only">Open main menu</span>
+                  <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                  </svg>
+                </button>
               </div>
+            </div>
+            <div class="hidden space-x-8 md:ml-10 md:flex">
+              <a href="/features" class="text-base font-medium text-white hover:text-gray-300">Features</a>
+              <a href="/#testimonials" class="text-base font-medium text-white hover:text-gray-300">Testimonials</a>
+              <a href="/about" class="text-base font-medium text-white hover:text-gray-300">About</a>
+              <a href="/pricing" class="text-base font-medium text-white hover:text-gray-300">Pricing</a>
+            </div>
+          </div>
+          <div class="hidden md:flex md:items-center md:space-x-6">
+            {{#if loggedIn}}
+            <a href="#" class="text-base font-medium text-white hover:text-gray-300">Logout</a>
+
+            {{else}}
+            <a href="/login" class="text-base font-medium text-white hover:text-gray-300">Log in</a>
+            <a href="/signup" class="rounded-full bg-tealowl4 px-3.5 py-2 text-sm font-semibold text-white shadow-sm transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-tealowl2 duration-300  focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-tealowl2">Sign Up</a>
             {{/if}}
+          </div>
         </nav>
+      </div>
     </header>
+
       <div class="bg-gradient-to-r from-green-100 via-yellow-100 to-green-200">
 
         {{{ body }}}
