@@ -6,7 +6,9 @@ const router = require('express').Router();
 router.get('/', async (req, res) => {
   res.render('homepage');
 });
-
+router.get('/product', async (req, res) => {
+  res.render('product');
+});
 
 
 // router.get('/', withAuth, async (req, res) => {
@@ -44,6 +46,8 @@ router.get('/signup', (req, res) => {
 
   res.render('signup');
 });
+
+
 
 
 module.exports = router;
