@@ -1,34 +1,39 @@
-<!DOCTYPE html>
-<html lang="en">
-
+<!doctype html>
+<html>
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>User Registry</title>
-  <link rel="stylesheet" href="/css/jass.css">
+   <link rel="stylesheet" href="/css/output.css">
 </head>
-
 <body>
-  <header class="display-flex justify-space-between align-center p-2">
-    <h1>
-      User Registry
-    </h1>
-    {{#if logged_in}}
-    <nav>
-      <button class="btn" id="logout">logout</button>
-    </nav>
-    {{/if}}
-  </header>
-  <main class="container container-fluid mt-5">
-    {{{ body }}}
-  </main>
-  <footer>
-      
-  </footer>
 
-  {{#if logged_in}}
-  <script src="/js/logout.js"></script>
-  {{/if}}
+ <header class="bg-tealowl">
+        <nav class="mx-auto flex max-w-8xl items-center justify-between p-2 lg:px-8" aria-label="Global">
+          <div class="flex lg:flex-1">
+            <a href="/" class="-m-1.5 p-1.5">
+              <span class="sr-only">Wheel Wisdom</span>
+              <img class="h-11 w-auto" src="/images/owls1icon.png" alt="">
+            </a>
+          </div>
+
+<!-- Two buttons for navigation -->
+            {{#if loggedIn}}
+              <button id="logout" class="rounded-full bg-tealowl4 px-3.5 py-2 text-sm font-semibold text-white shadow-sm transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-tealowl2 duration-300  focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-tealowl2">Logout</bu>
+            {{else}}
+              <div class="lg:flex lg:gap-x-12 lg:justify-end">
+                <a href="/signup" type="button" class="rounded-full bg-tealowl4 px-3.5 py-2 text-sm font-semibold text-white shadow-sm transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-tealowl2 duration-300  focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-tealowl2">Sign Up</a>
+                <a href="/login" type="button" class="rounded-full bg-tealowl4 px-3.5 py-2 text-sm font-semibold text-white shadow-sm transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-tealowl2 duration-300  focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-tealowl2">Login</a>
+              </div>
+            {{/if}}
+        </nav>
+    </header>
+      <div class="bg-gradient-to-r from-green-100 via-yellow-100 to-green-200">
+
+        {{{ body }}}
+
+<!-- Footer Content -->
+    {{> footer }}
+    </div>
+
 </body>
-
 </html>
