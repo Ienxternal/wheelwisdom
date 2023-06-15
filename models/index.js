@@ -1,5 +1,5 @@
 const User = require('./User');
-const Vehicle = require('./Vehicle');
+const Vehicle = require('./Vehicles');
 const Review = require('./Reviews');
 
 User.hasMany(Review, {
