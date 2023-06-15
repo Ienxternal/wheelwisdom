@@ -1,22 +1,35 @@
-const sequelize = require('../config/connection');
-const { User } = require('../models');
-const { Vehicle } = require('../models');
-const { Review } = require('../models');
+const fs = require('fs');
+const path = require('path');
+const bcrypt = require('bcrypt');
+const { User, Vehicle, Review } = require('../models');
 
-const userData = require('./userData.json');
-const vehicleData = require('./vehicle.json');
-const reviewData = require('./reviews.json');
+const seedAll = async () => {
+    try {
+        const userData = fs.readFileSync(path.join(__dirname, 'user.json'), 'utf8');
+        let users = JSON.parse(userData);
+        
+        // hash the passwords
+        users = users.map(user => {
+            user.password = bcrypt.hashSync(user.password, 10);
+            return user;
+        });
 
-const seedDatabase = async () => {
-  await sequelize.sync({ force: true });
+        await User.bulkCreate(users);
 
-  await seedUser();
+        const vehicleData = fs.readFileSync(path.join(__dirname, 'vehicle.json'), 'utf8');
+        const vehicles = JSON.parse(vehicleData);
 
-  await seedVehicle();
+        await Vehicle.bulkCreate(vehicles);
 
-  await seedReview();
+        const reviewData = fs.readFileSync(path.join(__dirname, 'reviews.json'), 'utf8');
+        const reviews = JSON.parse(reviewData);
 
-  process.exit(0);
+        await Review.bulkCreate(reviews);
+
+        console.log('Database seeded!');
+    } catch (error) {
+        console.error('Error seeding data:', error);
+    }
 };
 
-seedDatabase();
+seedAll()
