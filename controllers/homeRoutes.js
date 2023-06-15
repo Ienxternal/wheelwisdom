@@ -7,6 +7,18 @@ router.get('/', async (req, res) => {
   res.render('homepage');
 });
 
+router.get('/product', async (req, res) => {
+  res.render('product');
+});
+router.get('/about', async (req, res) => {
+  res.render('about');
+});
+router.get('/features', async (req, res) => {
+  res.render('features');
+});
+router.get('/pricing', async (req, res) => {
+  res.render('pricing');
+});
 
 
 // router.get('/', withAuth, async (req, res) => {
