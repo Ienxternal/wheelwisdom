@@ -12,6 +12,7 @@ router.get('/product', async (req, res) => {
 });
 router.get('/about', async (req, res) => {
   res.render('about');
+      // Create session variables based on the logged in user
 });
 router.get('/features', async (req, res) => {
   res.render('features');
