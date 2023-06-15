@@ -1,32 +1,27 @@
 [
     {
-        "review": "placeholder",
-        "vehicle_id" : 1,
-        "following_user_id":1
-        
+        "review_content": "Review 1 of Car 1 by User 1",
+        "following_user_id": 1,
+        "reviewed_vehicle_id": 1
     },
     {
-        "review": "placeholder",
-        "vehicle_id" : 2,
-        "following_user_id":2
-        
+        "review_content": "Review 2 of Car 2 by User 1",
+        "following_user_id": 1,
+        "reviewed_vehicle_id": 2
     },
     {
-        "review": "placeholder",
-        "vehicle_id" : 3,
-        "following_user_id":3
-        
+        "review_content": "Review 3 of Car 3 by User 1",
+        "following_user_id": 1,
+        "reviewed_vehicle_id": 3
     },
     {
-        "review": "placeholder",
-        "vehicle_id" : 4,
-        "following_user_id":4
-        
+        "review_content": "Review 1 of Car 1 by User 2",
+        "following_user_id": 2,
+        "reviewed_vehicle_id": 1
     },
     {
-        "review": "placeholder",
-        "vehicle_id" : 5,
-        "following_user_id":5
-        
+        "review_content": "Review 2 of Car 2 by User 2",
+        "following_user_id": 2,
+        "reviewed_vehicle_id": 2
     }
 ]
