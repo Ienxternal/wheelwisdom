@@ -1,22 +1,20 @@
+const seedUsers = require('./seedUsers');
+const seedVehicles = require('./seedVehicles');
+const seedReviews = require('./seedReviews');
+
 const sequelize = require('../config/connection');
-const { User } = require('../models');
-const { Vehicle } = require('../models');
-const { Review } = require('../models');
 
-const userData = require('./userData.json');
-const vehicleData = require('./vehicle.json');
-const reviewData = require('./reviews.json');
-
-const seedDatabase = async () => {
+const seedAll = async () => {
   await sequelize.sync({ force: true });
 
-  await seedUser();
+  await seedUsers();
 
-  await seedVehicle();
+  await seedVehicles();
 
-  await seedReview();
+  await seedReviews();
 
   process.exit(0);
 };
 
-seedDatabase();
+seedAll();
+
