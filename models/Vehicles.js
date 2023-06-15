@@ -23,6 +23,10 @@ Vehicle.init(
             type: DataTypes.STRING,
             allowNull: false,
         },
+        bodyType: {
+            type: DataTypes.STRING,
+            allowNull: false,
+        },
     },
     {
         sequelize,
