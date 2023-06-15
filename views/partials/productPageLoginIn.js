@@ -4,31 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>wheelwisdom</title>
     <link href="output.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/creativetimofficial/tailwind-starter-kit/compiled-tailwind.min.css"/>
 </head>
 
-
-    
 <!-- Top left Owl Icon -->
     <header class="bg-tealowl">
-        
-    
-<!--
-  This example requires some changes to your config:
-  
-  ```
-  // tailwind.config.js
-  module.exports = {
-    // ...
-    plugins: [
-      // ...
-      require('@tailwindcss/forms'),
-    ],
-  }
-  ```
--->
+
 <nav class="mx-auto flex max-w-6xl items-center justify-between p-2 lg:px-8" aria-label="Global">
   <div class="flex lg:flex-1">
     <a href="#" class="-m-1.5 p-1.5">
