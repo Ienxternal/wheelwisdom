@@ -1,6 +1,7 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 const User = require('./User');
+const Vehicle = require('./vehicle');
 
 class Review extends Model {}
 
@@ -16,13 +17,13 @@ Review.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
-    // //user_id: {
-    //     type: DataTypes.INTEGER,
-    //     allowNull: false,
-    //     references: {
-    //         model: "User",
-    //     }
-    // }
+     vehicle_id: {
+         type: DataTypes.INTEGER,
+         allowNull: false,
+         references: {
+             model: "User",
+        }
+     }
   },
   {
     sequelize,
@@ -32,6 +33,7 @@ Review.init(
     modelName: 'Review',
   }
 );
-// Review.hasOne(User)
+ Review.hasOne(User)
+ Review.hasOne(Vehicle)
 
 module.exports = Review;
