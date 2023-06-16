@@ -1,9 +1,9 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
-class Vehicle extends Model {}
+class Vehicles extends Model {}
 
-Vehicle.init(
+Vehicles.init(
     {
         id: {
             type: DataTypes.INTEGER,
@@ -15,7 +15,7 @@ Vehicle.init(
             type: DataTypes.INTEGER,
             allowNull: false,
         },
-        make: {
+        manufacturer: {
             type: DataTypes.STRING,
             allowNull: false,
         },
@@ -24,6 +24,10 @@ Vehicle.init(
             allowNull: false,
         },
         bodyType: {
+            type: DataTypes.STRING,
+            allowNull: false,
+        },
+        filename: {
             type: DataTypes.STRING,
             allowNull: false,
         },
@@ -37,4 +41,4 @@ Vehicle.init(
     }
 );
 
-module.exports = Vehicle;
+module.exports = Vehicles;

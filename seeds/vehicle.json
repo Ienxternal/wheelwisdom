@@ -1,42 +1,87 @@
+[
 {
     "bodyType": "Station Wagon",
     "manufacturer": "Datsun",
     "model": "B210",
-    "year": 1981
+    "year": 1981,
+    "filename": "placeholder.jpg"
+    
 },
 {
     "bodyType": "2-door",
     "manufacturer": "Volkswagen",
     "model": "Beetle",
-    "year": 1969
+    "year": 1969,
+    "filename": "placeholder.jpg"
 },
 {
     "bodyType": "Truck",
     "manufacturer": "Ford",
     "model": "F350",
-    "year": 2017
+    "year": 2017,
+    "filename": "placeholder.jpg"
 },
 {
     "bodyType": "Sports Car",
     "manufacturer": "Chevrolet",
     "model": "Corvette Stingray",
-    "year": 1970
+    "year": 1970,
+    "filename": "placeholder.jpg"
 },
 {
     "bodyType": "Muscle Car",
     "manufacturer": "Ford",
     "model": "Mustang Boss 302",
-    "year": 1969
+    "year": 1969,
+    "filename": "placeholder.jpg"
 },
 {
     "bodyType": "Classic Sedan",
     "manufacturer": "Mercedes-Benz",
     "model": "300SL Gullwing",
-    "year": 1955
+    "year": 1955,
+    "filename": "placeholder.jpg"
 },
 {
     "bodyType": "Hatchback",
     "manufacturer": "Honda",
     "model": "Civic",
-    "year": 2019
+    "year": 2019,
+    "filename": "placeholder.jpg"
+},
+{
+    "year": 2020,
+    "manufacturer": "Toyota",
+    "model": "Camry",
+    "bodyType": "Sedan",
+    "filename": "placeholder.jpg"
+},
+{
+    "year": 2019,
+    "manufacturer": "Honda",
+    "model": "Civic",
+    "bodyType": "Sedan",
+    "filename": "placeholder.jpg"
+},
+{
+    "year": 2021,
+    "manufacturer": "Tesla",
+    "model": "Model 3",
+    "bodyType": "Sedan",
+    "filename": "placeholder.jpg"
+},
+{
+    "year": 2022,
+    "manufacturer": "Ford",
+    "model": "F-150",
+    "bodyType": "Truck",
+    "filename": "placeholder.jpg"
+},
+{
+    "year": 2022,
+    "manufacturer": "Subaru",
+    "model": "Forester",
+    "bodyType": "SUV",
+    "filename": "placeholder.jpg"
 }
+]

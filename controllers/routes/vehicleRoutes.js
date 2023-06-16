@@ -1,12 +1,12 @@
 const express = require('express');
-const { Vehicle } = require('../../models');
+const { Vehicles } = require('../../models');
 
 const router = express.Router();
 
 // Get all vehicles
 router.get('/', async (req, res) => {
     try {
-        const vehicles = await Vehicle.findAll();
+        const vehicles = await Vehicles.findAll();
         res.json(vehicles);
     } catch (err) {
         console.error(err);
@@ -17,7 +17,7 @@ router.get('/', async (req, res) => {
 // Get a single vehicle by ID
 router.get('/:id', async (req, res) => {
     try {
-        const vehicle = await Vehicle.findByPk(req.params.id);
+        const vehicle = await Vehicles.findByPk(req.params.id);
         if (!vehicle) {
             res.status(404).json({ message: 'Vehicle not found' });
         } else {
@@ -32,7 +32,7 @@ router.get('/:id', async (req, res) => {
 // Create a new vehicle
 router.post('/', async (req, res) => {
     try {
-        const vehicle = await Vehicle.create(req.body);
+        const vehicle = await Vehicles.create(req.body);
         res.status(201).json(vehicle);
     } catch (err) {
         console.error(err);
@@ -43,7 +43,7 @@ router.post('/', async (req, res) => {
 // Update a vehicle
 router.put('/:id', async (req, res) => {
     try {
-        const vehicle = await Vehicle.findByPk(req.params.id);
+        const vehicle = await Vehicles.findByPk(req.params.id);
         if (!vehicle) {
             res.status(404).json({ message: 'Vehicle not found' });
         } else {
@@ -59,7 +59,7 @@ router.put('/:id', async (req, res) => {
 // Delete a vehicle
 router.delete('/:id', async (req, res) => {
     try {
-        const vehicle = await Vehicle.findByPk(req.params.id);
+        const vehicle = await Vehicles.findByPk(req.params.id);
         if (!vehicle) {
             res.status(404).json({ message: 'Vehicle not found' });
         } else {
