@@ -34,7 +34,7 @@
           </div>
           <div class="hidden md:flex md:items-center md:space-x-6">
             {{#if loggedIn}}
-            <a href="#" class="text-base font-medium text-white hover:text-gray-300">Logout</a>
+            <button id="logout" class="rounded-full bg-tealowl4 px-3.5 py-2 text-sm font-semibold text-white shadow-sm transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-tealowl2 duration-300  focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-tealowl2">Logout</button>
 
             {{else}}
             <a href="/login" class="text-base font-medium text-white hover:text-gray-300">Log in</a>
@@ -42,9 +42,12 @@
             {{/if}}
           </div>
         </nav>
+        
       </div>
     </header>
-
+  {{#if loggedIn}}
+  <script src="/js/logout.js"></script>
+  {{/if}}
       <div class="bg-gradient-to-r from-green-100 via-yellow-100 to-green-200">
 
         {{{ body }}}
