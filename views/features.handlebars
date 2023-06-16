@@ -1,58 +1,101 @@
-<!doctype html>
-<html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/css/output.css">
-</head>
-<body>
-
-    <header class="relative">
-      <div class="bg-tealowl py-2">
-        <nav class="relative mx-1 flex max-w-8xl items-center justify-between px-6" aria-label="Global">
-          <div class="flex flex-1 items-center">
-            <div class="flex w-full items-center justify-between md:w-auto">
-              <a href="/">
-                <span class="sr-only">Your Company</span>
-                <img class="h-8 w-auto sm:h-10" src="/images/owls1icon.png" alt="">
-              </a>
-              <div class="-mr-2 flex items-center md:hidden">
-                <button type="button" class="focus-ring-inset inline-flex items-center justify-center rounded-md bg-gray-900 p-2 text-gray-400 hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-white" aria-expanded="false">
-                  <span class="sr-only">Open main menu</span>
-                  <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+<div class="relative py-24 sm:py-32 lg:py-40">
+  <div class="mx-auto max-w-md px-6 text-center sm:max-w-3xl lg:max-w-7xl lg:px-8">
+    <h2 class="text-lg font-semibold text-owltext1">Reviews Faster</h2>
+    <p class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Everything you need for your owls and your reviews!</p>
+    <p class="mx-auto mt-5 max-w-prose text-xl text-gray-500">Phasellus lorem quam molestie id quisque diam aenean nulla in. Accumsan in quis quis nunc, ullamcorper malesuada. Eleifend condimentum id viverra nulla.</p>
+    <div class="mt-20">
+      <div class="grid grid-cols-1 gap-12 sm:grid-cols-2 lg:grid-cols-3">
+        <div class="pt-6">
+          <div class="flow-root rounded-lg bg-gray-50 px-6 pb-8">
+            <div class="-mt-6">
+              <div>
+                <span class="inline-flex items-center justify-center rounded-xl bg-owlsearch2 p-3 shadow-lg">
+                  <svg class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 16.5V9.75m0 0l3 3m-3-3l-3 3M6.75 19.5a4.5 4.5 0 01-1.41-8.775 5.25 5.25 0 0110.233-2.33 3 3 0 013.758 3.848A3.752 3.752 0 0118 19.5H6.75z" />
                   </svg>
-                </button>
+                </span>
               </div>
-            </div>
-            <div class="hidden space-x-8 md:ml-10 md:flex">
-              <a href="/features" class="text-base font-medium text-white hover:text-gray-300">Features</a>
-              <a href="/#testimonials" class="text-base font-medium text-white hover:text-gray-300">Testimonials</a>
-              <a href="/about" class="text-base font-medium text-white hover:text-gray-300">About</a>
-              <a href="/pricing" class="text-base font-medium text-white hover:text-gray-300">Pricing</a>
+              <h3 class="mt-8 text-lg font-semibold leading-8 tracking-tight text-gray-900">Cloud Service</h3>
+              <p class="mt-5 text-base leading-7 text-gray-600">Owl reviews have 100% support from real owls!</p>
             </div>
           </div>
-          <div class="hidden md:flex md:items-center md:space-x-6">
-            {{#if loggedIn}}
-            <button id="logout" class="rounded-full bg-tealowl4 px-3.5 py-2 text-sm font-semibold text-white shadow-sm transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-tealowl2 duration-300  focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-tealowl2">Logout</button>
-
-            {{else}}
-            <a href="/login" class="text-base font-medium text-white hover:text-gray-300">Log in</a>
-            <a href="/signup" class="rounded-full bg-tealowl4 px-3.5 py-2 text-sm font-semibold text-white shadow-sm transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-tealowl2 duration-300  focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-tealowl2">Sign Up</a>
-            {{/if}}
+        </div>
+        <div class="pt-6">
+          <div class="flow-root rounded-lg bg-gray-50 px-6 pb-8">
+            <div class="-mt-6">
+              <div>
+                <span class="inline-flex items-center justify-center rounded-xl bg-owlsearch2 p-3 shadow-lg">
+                  <svg class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z" />
+                  </svg>
+                </span>
+              </div>
+              <h3 class="mt-8 text-lg font-semibold leading-8 tracking-tight text-gray-900">SSL Certificates</h3>
+              <p class="mt-5 text-base leading-7 text-gray-600">Owls will protect your browsing experiences.</p>
+            </div>
           </div>
-        </nav>
-        
+        </div>
+        <div class="pt-6">
+          <div class="flow-root rounded-lg bg-gray-50 px-6 pb-8">
+            <div class="-mt-6">
+              <div>
+                <span class="inline-flex items-center justify-center rounded-xl bg-owlsearch2 p-3 shadow-lg">
+                  <svg class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182m0-4.991v4.99" />
+                  </svg>
+                </span>
+              </div>
+              <h3 class="mt-8 text-lg font-semibold leading-8 tracking-tight text-gray-900">Circles?</h3>
+              <p class="mt-5 text-base leading-7 text-gray-600">We all love circles but owls more than us!</p>
+            </div>
+          </div>
+        </div>
+        <div class="pt-6">
+          <div class="flow-root rounded-lg bg-gray-50 px-6 pb-8">
+            <div class="-mt-6">
+              <div>
+                <span class="inline-flex items-center justify-center rounded-xl bg-owlsearch2 p-3 shadow-lg">
+                  <svg class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z" />
+                  </svg>
+                </span>
+              </div>
+              <h3 class="mt-8 text-lg font-semibold leading-8 tracking-tight text-gray-900">Owl Security</h3>
+              <p class="mt-5 text-base leading-7 text-gray-600">Even more security that you need! But its okay it's owls.</p>
+            </div>
+          </div>
+        </div>
+        <div class="pt-6">
+          <div class="flow-root rounded-lg bg-gray-50 px-6 pb-8">
+            <div class="-mt-6">
+              <div>
+                <span class="inline-flex items-center justify-center rounded-xl bg-owlsearch2 p-3 shadow-lg">
+                  <svg class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12a7.5 7.5 0 0015 0m-15 0a7.5 7.5 0 1115 0m-15 0H3m16.5 0H21m-1.5 0H12m-8.457 3.077l1.41-.513m14.095-5.13l1.41-.513M5.106 17.785l1.15-.964m11.49-9.642l1.149-.964M7.501 19.795l.75-1.3m7.5-12.99l.75-1.3m-6.063 16.658l.26-1.477m2.605-14.772l.26-1.477m0 17.726l-.26-1.477M10.698 4.614l-.26-1.477M16.5 19.794l-.75-1.299M7.5 4.205L12 12m6.894 5.785l-1.149-.964M6.256 7.178l-1.15-.964m15.352 8.864l-1.41-.513M4.954 9.435l-1.41-.514M12.002 12l-3.75 6.495" />
+                  </svg>
+                </span>
+              </div>
+              <h3 class="mt-8 text-lg font-semibold leading-8 tracking-tight text-gray-900">Powerful API</h3>
+              <p class="mt-5 text-base leading-7 text-gray-600">Custom made owl APIs that helps the owls review.</p>
+            </div>
+          </div>
+        </div>
+        <div class="pt-6">
+          <div class="flow-root rounded-lg bg-gray-50 px-6 pb-8">
+            <div class="-mt-6">
+              <div>
+                <span class="inline-flex items-center justify-center rounded-xl bg-owlsearch2 p-3 shadow-lg">
+                  <svg class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 17.25v-.228a4.5 4.5 0 00-.12-1.03l-2.268-9.64a3.375 3.375 0 00-3.285-2.602H7.923a3.375 3.375 0 00-3.285 2.602l-2.268 9.64a4.5 4.5 0 00-.12 1.03v.228m19.5 0a3 3 0 01-3 3H5.25a3 3 0 01-3-3m19.5 0a3 3 0 00-3-3H5.25a3 3 0 00-3 3m16.5 0h.008v.008h-.008v-.008zm-3 0h.008v.008h-.008v-.008z" />
+                  </svg>
+                </span>
+              </div>
+              <h3 class="mt-8 text-lg font-semibold leading-8 tracking-tight text-gray-900">Database Backups</h3>
+              <p class="mt-5 text-base leading-7 text-gray-600">Owl database redundency allows owls to continue without any downtime.</p>
+            </div>
+          </div>
+        </div>
       </div>
-    </header>
-  {{#if loggedIn}}
-  <script src="/js/logout.js"></script>
-  {{/if}}
-      <div class="bg-gradient-to-r from-green-100 via-yellow-100 to-green-200">
-
-        {{{ body }}}
-        {{> footer }}
-      </div>
-
-</body>
-</html>
+    </div>
+  </div>
+</div>
