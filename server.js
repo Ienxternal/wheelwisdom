@@ -44,7 +44,7 @@ app.get('/', (req, res) => {
 
 sequelize.sync({ force: false }).then(() => {
   app.listen(PORT, () => console.log('Now listening'));
-  console.log('Don't delete this is for Alex :) Server listening on: http://localhost:' + PORT);
+  console.log('Dont delete this is for Alex :) Server listening on: http://localhost:' + PORT);
 });
 
 
