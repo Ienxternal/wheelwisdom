@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 
-const { Review, User } = require('../../../models');
+const { Review, User } = require('../../models');
 
 // Route to get all users
 router.get('/', async (req, res) => {
@@ -18,12 +18,15 @@ router.get('/', async (req, res) => {
 router.get('/:id', async (req, res) => {
   try {
     const user = await User.findByPk(req.params.id);
-    const reviews = await Review.findAll({ where: { user_id: req.params.id } });
+    //const reviews = await Review.findAll({ where: { user_id: req.params.id } });
+
+    //PUT AFTER ELSE BELOW WHEN WE GET THE DB REVIEWS FINISHED
+    // if (user && reviews) {
+    //   res.json(user, reviews);
+    // } else
 
     if (!user) {
       res.status(404).json({ message: 'User not found' });
-    } else if (user && reviews) {
-      res.json(user, reviews);
     } else {
       res.json(user);
     }
@@ -78,49 +81,3 @@ router.delete('/:id', async (req, res) => {
 
 module.exports = router;
 
-/*const router = require('express').Router();
-const { User } = require('../../../models');
-
-router.post('/login', async (req, res) => {
-  try {
-    const userData = await User.findOne({ where: { email: req.body.email } });
-
-    if (!userData) {
-      res
-        .status(400)
-        .json({ message: 'Incorrect email or password, please try again' });
-      return;
-    }
-
-    const validPassword = await userData.checkPassword(req.body.password);
-
-    if (!validPassword) {
-      res
-        .status(400)
-        .json({ message: 'Incorrect email or password, please try again' });
-      return;
-    }
-
-    req.session.save(() => {
-      req.session.user_id = userData.id;
-      req.session.logged_in = true;
-      
-      res.json({ user: userData, message: 'You are now logged in!' });
-    });
-
-  } catch (err) {
-    res.status(400).json(err);
-  }
-});
-
-router.post('/logout', (req, res) => {
-  if (req.session.logged_in) {
-    req.session.destroy(() => {
-      res.status(204).end();
-    });
-  } else {
-    res.status(404).end();
-  }
-});
-
-module.exports = router;*/
