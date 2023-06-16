@@ -1,30 +1,8 @@
-const sequelize = require('../config/connection');
 const User = require('./User');
-const Vehicle = require('./Vehicles');
-const Review = require('./Reviews');
+const Vehicles = require('./Vehicles');
+const Reviews = require('./Reviews'); //1.3 Mark Addition for Table
 
-User.hasMany(Review, {
-    foreignKey: 'following_user_id',
-    onDelete: 'CASCADE',
-});
+//Create connections
 
-Vehicle.hasMany(Review, {
-    foreignKey: 'reviewed_vehicle_id',
-    onDelete: 'CASCADE',
-});
 
-Review.belongsTo(User, {
-    foreignKey: 'following_user_id',
-});
-
-Review.belongsTo(Vehicle, {
-    foreignKey: 'reviewed_vehicle_id',
-});
-
-module.exports = {
-    User,
-    Vehicle,
-    Review,
-};
-
-sequelize.sync()
+module.exports = { User, Vehicles, Reviews }; //1.3 Mark Addition for Table
