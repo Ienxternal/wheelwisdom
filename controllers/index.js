@@ -5,7 +5,7 @@ const userRoutes = require('./routes/userRoutes');
 const vehicleRoutes = require('./routes/vehicleRoutes');
 
 
-router.use('/api', homeRoutes);
+router.use('/', homeRoutes);
 router.use('/api/users', userRoutes);
 router.use('/api/vehicle', vehicleRoutes);
 

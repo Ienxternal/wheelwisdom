@@ -32,9 +32,6 @@ app.set('view engine', 'handlebars');
 app.use(session(sess));
 app.use(routes);
 
-app.get('/', (req, res) => {
-  res.send('whatever')
-})
 
 sequelize.sync({ force: false }).then(() => {
   app.listen(PORT, () => console.log('Now listening'));
