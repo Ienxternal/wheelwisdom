@@ -18,9 +18,9 @@
                   class="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded bg-blueGray-800">
                   <div class="rounded-t-md mb-0 px-4 py-3 bg-transparent">
                     <div class="flex flex-wrap items-center">
-                      <div class="relative w-full max-w-full flex-grow flex-1">
+                      <div class="relative w-full max-w-full flex-grow flex-1  carImage">
           <!-- handlebar this image -->
-                        <img src="/images/2019-civic-hatchback-front.png" alt="grey honda civic" >
+                        
 
                       </div>
                     </div>
@@ -36,10 +36,14 @@
                       <div class="relative w-full max-w-full flex-grow flex-1  ">
         <!-- handlebar this information -->
                         <ul class="">
-                          <li id="year" class="uppercase text-blueGray-400 mb-1 text-xl font-semibold">2019</li>
-                          <li id="Make" class="text-blueGray-700 text-4xl font-semibold mb-1">Honda</li>
-                          <li id="model" class=" text-3xl mb-1">Civic</li>
-                          <li id="" class=""></li>
+                    {{!--{{year}}  --}}
+                          <li id="year" class="uppercase text-blueGray-400 mb-1 text-xl font-semibold">{{year}}</li>
+                    {{!-- {{make}} --}}
+                          <li id="Make" class="text-blueGray-700 text-4xl font-semibold mb-1">{{manufacturer}}</li>
+                    {{!-- {{model}} --}}
+                          <li id="model" class=" text-3xl mb-1">{{model}}</li>
+                    {{!-- {{bodytype}} --}}
+                          <li id="bodytype" class="uppercase text-blueGray-400 mb-1 text-xl font-semibold">{{bodyType}}</li>
                           
                         </ul>
                       </div>
@@ -76,16 +80,13 @@
                  <!--handlebar the commments   -->
                         <div class="flex mt-4 mb-4">
                           <div class="ml-4">
-                            <h4 class="text-xl font-semibold">John Doe</h4>
-                            <p class="text-gray-600 ml-8 mr-1 mt-1" >Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            {{!-- {{username}} --}}
+                            <h4 class="text-xl font-semibold">   </h4>
+                            {{!-- {{comment}} --}}
+                            <p class="text-gray-600 ml-8 mr-1 mt-1" ></p>
                           </div>
                           
-                        </div>
-                        <div class="flex mt-4 mb-4">
-                          <div class="ml-4">
-                            <h4 class="text-xl font-semibold">John Doe</h4>
-                            <p class="text-gray-600 ml-8 mr-1 mt-1" >Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                          </div>
+                        
                           
                         </div>
                  <!-- More comments... -->
