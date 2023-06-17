@@ -1,15 +1,45 @@
 const router = require('express').Router();
+const { Vehicles } = require('../../models');
 
 router.get('/', async (req, res) => {
-
-    res.render('homepage', {
-      loggedIn: req.session.loggedIn,
-    });
-  } 
-);
-router.get('/product', async (req, res) => {
-  res.render('product');
+  res.render('homepage', {
+    loggedIn: req.session.loggedIn,
+  });
 });
+
+router.get('/product', async (req, res) => {
+  try {
+    const { search } = req.query;
+    let vehicles = [];
+
+    if (search) {
+      // Split the search input into individual values
+      const searchValues = search.split(' ');
+
+      // Build the query condition for Sequelize
+      const condition = {
+        [Op.and]: searchValues.map((value) => ({
+          [Op.or]: [
+            { model: { [Op.like]: `%${value}%` } },
+            { manufacturer: { [Op.like]: `%${value}%` } },
+            { year: { [Op.eq]: value } },
+          ],
+        })),
+      };
+      // Query the vehicles table based on the search condition
+      vehicles = await Vehicles.findAll({ where: condition });
+    }
+
+    res.render('product', {
+      loggedIn: req.session.loggedIn,
+      vehicles,
+    });
+  } catch (err) {
+    console.error(err);
+    res.status(500).json({ message: 'Server Error' });
+  }
+});
+
 router.get('/about', async (req, res) => {
   res.render('about');
 });
