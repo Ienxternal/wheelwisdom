@@ -69,4 +69,3 @@ Wheel Wisdom was built by:
 
 ## License
 
-Licensed under the MIT license.
