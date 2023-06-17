@@ -16,7 +16,7 @@ router.get('/product', async (req, res) => {
       // Split the search input into individual values
       const searchValues = search.split(' ');
 
-      // Build the query condition for Sequelize
+      // Build the query condition for Sequelize.
       const condition = {
         [Op.and]: searchValues.map((value) => ({
           [Op.or]: [
