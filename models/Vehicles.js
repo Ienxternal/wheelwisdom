@@ -37,7 +37,7 @@ Vehicles.init(
         timestamps: true,
         freezeTableName: true,
         underscored: true,
-        modelName: 'vehicle',
+        modelName: 'vehicles',
     }
 );
 

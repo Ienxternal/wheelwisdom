@@ -42,6 +42,52 @@ module.exports = router;
 
 
 
+
+
+// const router = require('express').Router();
+// const { Vehicles } = require('../../models');
+
+// router.get('/', async (req, res) => {
+//   try {
+//     const { search } = req.query;
+//     let vehicles = [];
+
+//     if (search) {
+//       // Split the search input into individual values
+//       const searchValues = search.split(' ');
+
+//       // Build the query condition for Sequelize
+//       const condition = {
+//         [Op.and]: searchValues.map((value) => ({
+//           [Op.or]: [
+//             { model: { [Op.like]: %${value}% } },
+//             { make: { [Op.like]: %${value}% } },
+//             { year: { [Op.eq]: value } },
+//           ],
+//         })),
+//       };
+
+//       // Query the vehicles table based on the search condition
+//       vehicles = await Vehicles.findAll({ where: condition });
+//     }
+
+//     res.render('homepage', {
+//       loggedIn: req.session.loggedIn,
+//       vehicles,
+//     });
+//   } catch (err) {
+//     console.error(err);
+//     res.status(500).json({ message: 'Server Error' });
+//   }
+// });
+
+// module.exports = router;
+
+
+
+
+
+
 // const router = require('express').Router();
 // const { User } = require('../../models');
 // const withAuth = require('../../utils/auth');
@@ -63,6 +109,14 @@ module.exports = router;
 // });
 // router.get('/pricing', async (req, res) => {
 //   res.render('pricing');
+// });
+
+// router.get('/login', (req, res) => {
+//   res.render('login');
+// });
+
+// router.get('/signup', (req, res) => {
+//   res.render('signup');
 // });
 
 // // router.get('/', withAuth, async (req, res) => {
