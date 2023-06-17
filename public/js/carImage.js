@@ -4,32 +4,32 @@
 const carImage = [
 
 {
-      title: '1969 Ford Mustang Boss 302',
-      filename: '1969-ford-mustang-boss-302.jpeg',
+    title: '1969 Ford Mustang Boss 302',
+    filename: '1969-ford-mustang-boss-302.jpeg',
   },
   {
-    title: '',
-    filename: '',
+    title: '1955 Mercedes Benz 300sl gullwing t7',
+    filename: '1955_mercedes-benz_300sl-gullwing_t7.jpg',
   },
   {
-    title: '',
-    filename: '',
+    title: '1970 Corvette Chronology',
+    filename: '1970-corvette-chronology.jpg',
   },
   {
-    title: '',
-    filename: '',
+    title: '2017 Ford F350',
+    filename: '2017-Ford-F350png',
   },
   {
-    title: '',
-    filename: '',
+    title: '1969 Volkswagon Beetle',
+    filename: '1969-volkswagon-beetle.jpg',
   },
   {
-    title: '',
-    filename: '',
+    title: '2019 Honda Civic Hatchback',
+    filename: '2019-civic-hatchback-front.png',
   },
   {
-    title: '',
-    filename: '',
+    title: '1981 Datsun B-210',
+    filename: '1981 Datsun B-210.jpg',
   },
 ];
   // Get the Handlebars template from your HTML file or load it via AJAX
