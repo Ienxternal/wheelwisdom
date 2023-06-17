@@ -25,7 +25,7 @@ Reviews.init(
     vehicle_id: {
         type: DataTypes.INTEGER,
         references: {
-            model: 'vehicle',
+            model: 'vehicles',
             key: 'id',
         },
     },
