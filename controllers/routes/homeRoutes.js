@@ -9,10 +9,9 @@ router.get('/', async (req, res) => {
   });
 });
 
-router.post('/search', async (req, res) => {
+router.get('/search', async (req, res) => {
   try {
-    const { search } = req.body;
-    const criteria = search.split(' '); 
+    const { search } = req.query;
     const keywords = search.split(' ');
 
     const results = await Vehicles.findAll({
@@ -26,6 +25,7 @@ router.post('/search', async (req, res) => {
         }))
       }
     });
+
     const vehicleResults = results.map((vehicle) => vehicle.toJSON());
 
     res.render('product', { results: vehicleResults });
@@ -37,13 +37,24 @@ router.post('/search', async (req, res) => {
 });
 
 router.get('/about', async (req, res) => {
-  res.render('about');
+  res.render('about', {
+    loggedIn: req.session.loggedIn,
+  });
+});
+router.get('/profile', async (req, res) => {
+  res.render('profile', {
+    loggedIn: req.session.loggedIn,
+  });
 });
 router.get('/features', async (req, res) => {
-  res.render('features');
+  res.render('features', {
+    loggedIn: req.session.loggedIn,
+  });
 });
 router.get('/pricing', async (req, res) => {
-  res.render('pricing');
+  res.render('pricing', {
+    loggedIn: req.session.loggedIn,
+  });
 });
 router.get('/login', (req, res) => {
   res.render('login');
