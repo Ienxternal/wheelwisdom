@@ -1,5 +1,6 @@
-const router = require('express').Router();
-const { Vehicles } = require('../../models');
+const express = require('express');
+const router = express.Router();
+const Vehicles = require('../../models/Vehicles');
 
 router.get('/', async (req, res) => {
   res.render('homepage', {
@@ -7,38 +8,19 @@ router.get('/', async (req, res) => {
   });
 });
 
-router.get('/product', async (req, res) => {
+router.post('/search', async (req, res) => {
   try {
-    const { search } = req.query;
-    let vehicles = [];
-
-    if (search) {
-      // Split the search input into individual values
-      const searchValues = search.split(' ');
-
-      // Build the query condition for Sequelize.
-      const condition = {
-        [Op.and]: searchValues.map((value) => ({
-          [Op.or]: [
-            { model: { [Op.like]: `%${value}%` } },
-            { manufacturer: { [Op.like]: `%${value}%` } },
-            { year: { [Op.eq]: value } },
-          ],
-        })),
-      };
-      // Query the vehicles table based on the search condition
-      vehicles = await Vehicles.findAll({ where: condition });
-    }
-
-    res.render('product', {
-      loggedIn: req.session.loggedIn,
-      vehicles,
-    });
-  } catch (err) {
-    console.error(err);
-    res.status(500).json({ message: 'Server Error' });
+    const { year } = req.body;
+    const vehicles = await Vehicles.findAll({ where: { year } });
+    // Convert Sequelize instance to plain JavaScript objects
+    const vehicleResults = vehicles.map((vehicle) => vehicle.get({ plain: true }));
+    res.render('product', { vehicles: vehicleResults });
+  } catch (error) {
+    console.log(error);
+    res.status(500).send('Internal Server Error');
   }
 });
+
 
 router.get('/about', async (req, res) => {
   res.render('about');
