@@ -37,13 +37,24 @@ router.get('/search', async (req, res) => {
 });
 
 router.get('/about', async (req, res) => {
-  res.render('about');
+  res.render('about', {
+    loggedIn: req.session.loggedIn,
+  });
+});
+router.get('/profile', async (req, res) => {
+  res.render('profile', {
+    loggedIn: req.session.loggedIn,
+  });
 });
 router.get('/features', async (req, res) => {
-  res.render('features');
+  res.render('features', {
+    loggedIn: req.session.loggedIn,
+  });
 });
 router.get('/pricing', async (req, res) => {
-  res.render('pricing');
+  res.render('pricing', {
+    loggedIn: req.session.loggedIn,
+  });
 });
 router.get('/login', (req, res) => {
   res.render('login');
