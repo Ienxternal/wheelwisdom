@@ -1,5 +1,6 @@
 const express = require('express');
 const router = express.Router();
+const { Op } = require('sequelize');
 const Vehicles = require('../../models/Vehicles');
 
 router.get('/', async (req, res) => {
@@ -10,17 +11,30 @@ router.get('/', async (req, res) => {
 
 router.post('/search', async (req, res) => {
   try {
-    const { year } = req.body;
-    const vehicles = await Vehicles.findAll({ where: { year } });
-    // Convert Sequelize instance to plain JavaScript objects
-    const vehicleResults = vehicles.map((vehicle) => vehicle.get({ plain: true }));
-    res.render('product', { vehicles: vehicleResults });
+    const { search } = req.body;
+    const criteria = search.split(' '); 
+    const keywords = search.split(' ');
+
+    const results = await Vehicles.findAll({
+      where: {
+        [Op.and]: keywords.map((keyword) => ({
+          [Op.or]: [
+            { year: keyword },
+            { manufacturer: { [Op.like]: `%${keyword}%` } },
+            { model: { [Op.like]: `%${keyword}%` } }
+          ]
+        }))
+      }
+    });
+    const vehicleResults = results.map((vehicle) => vehicle.toJSON());
+
+    res.render('product', { results: vehicleResults });
+    console.log(vehicleResults);
   } catch (error) {
     console.log(error);
-    res.status(500).send('Internal Server Error');
+    res.status(500).json({ error: 'Internal Server Error' });
   }
 });
-
 
 router.get('/about', async (req, res) => {
   res.render('about');
