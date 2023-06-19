@@ -46,6 +46,11 @@ router.get('/profile', async (req, res) => {
     loggedIn: req.session.loggedIn,
   });
 });
+router.get('/garage', async (req, res) => {
+  res.render('garage', {
+    loggedIn: req.session.loggedIn,
+  });
+});
 router.get('/features', async (req, res) => {
   res.render('features', {
     loggedIn: req.session.loggedIn,
