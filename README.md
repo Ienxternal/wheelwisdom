@@ -57,6 +57,14 @@ WheelWisdom was built with the following technologies:
 
 ## Future Development: 
 
+- Ability to rate vehicles with stars (or owls)
+- Verified reviews
+- Community forums
+- Meetups
+- Different pages for motorcycles, RVs, classic cars, etc.
+- Links to dealerships, car insurance…
+- Market value
+- Up vote/down vote
 
 
 ## Credits:
