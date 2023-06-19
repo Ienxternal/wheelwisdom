@@ -83,5 +83,12 @@
     "model": "Forester",
     "bodyType": "SUV",
     "filename": "placeholder.jpg"
+},
+{
+    "year": 1999,
+    "manufacturer": "Honda",
+    "model": "Civic",
+    "bodyType": "Coupe",
+    "filename": "placeholder.jpg"
 }
 ]
