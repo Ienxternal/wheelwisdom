@@ -4,7 +4,7 @@
     "manufacturer": "Datsun",
     "model": "B210",
     "year": 1981,
-    "filename": "placeholder.jpg"
+    "filename": "1981-Datsun-B-210.jpg"
     
 },
 {
@@ -12,83 +12,83 @@
     "manufacturer": "Volkswagen",
     "model": "Beetle",
     "year": 1969,
-    "filename": "placeholder.jpg"
+    "filename": "1969-volkswagon-beetle.jpg"
 },
 {
     "bodyType": "Truck",
     "manufacturer": "Ford",
     "model": "F350",
     "year": 2017,
-    "filename": "placeholder.jpg"
+    "filename": "2017-Ford-F350.png"
 },
 {
     "bodyType": "Sports Car",
     "manufacturer": "Chevrolet",
     "model": "Corvette Stingray",
     "year": 1970,
-    "filename": "placeholder.jpg"
+    "filename": "1970-corvette-chronology.jpg"
 },
 {
     "bodyType": "Muscle Car",
     "manufacturer": "Ford",
     "model": "Mustang Boss 302",
     "year": 1969,
-    "filename": "placeholder.jpg"
+    "filename": "1969-ford-mustang-boss-302.jpeg"
 },
 {
     "bodyType": "Classic Sedan",
     "manufacturer": "Mercedes-Benz",
     "model": "300SL Gullwing",
     "year": 1955,
-    "filename": "placeholder.jpg"
+    "filename": "1955_mercedes-benz_300sl-gullwing_t7.jpg"
 },
 {
     "bodyType": "Hatchback",
     "manufacturer": "Honda",
     "model": "Civic",
     "year": 2019,
-    "filename": "placeholder.jpg"
+    "filename": "2019-civic-hatchback-front.png"
 },
 {
     "year": 2020,
     "manufacturer": "Toyota",
     "model": "Camry",
     "bodyType": "Sedan",
-    "filename": "placeholder.jpg"
+    "filename": "2020toyotacamry.png"
 },
 {
     "year": 2019,
     "manufacturer": "Honda",
     "model": "Civic",
     "bodyType": "Sedan",
-    "filename": "placeholder.jpg"
+    "filename": "2019hondacivic.png"
 },
 {
     "year": 2021,
     "manufacturer": "Tesla",
     "model": "Model 3",
     "bodyType": "Sedan",
-    "filename": "placeholder.jpg"
+    "filename": "2021teslamodel3.jpg"
 },
 {
     "year": 2022,
     "manufacturer": "Ford",
     "model": "F-150",
     "bodyType": "Truck",
-    "filename": "placeholder.jpg"
+    "filename": "2022fordf150.png"
 },
 {
     "year": 2022,
     "manufacturer": "Subaru",
     "model": "Forester",
     "bodyType": "SUV",
-    "filename": "placeholder.jpg"
+    "filename": "2022SubaruForester.png"
 },
 {
     "year": 1999,
     "manufacturer": "Honda",
     "model": "Civic",
     "bodyType": "Coupe",
-    "filename": "placeholder.jpg"
+    "filename": "1999-honda-civic-si-coupe.jpg"
 }
 ]
