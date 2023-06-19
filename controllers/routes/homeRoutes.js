@@ -28,7 +28,7 @@ router.get('/search', async (req, res) => {
 
     const vehicleResults = results.map((vehicle) => vehicle.toJSON());
 
-    res.render('product', { results: vehicleResults });
+    res.render('product', { results: vehicleResults, loggedIn: req.session.loggedIn });
     console.log(vehicleResults);
   } catch (error) {
     console.log(error);
