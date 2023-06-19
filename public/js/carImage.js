@@ -17,7 +17,7 @@ const carImage = [
   },
   {
     title: '2017 Ford F350',
-    filename: '2017-Ford-F350png',
+    filename: '2017-Ford-F350.png',
   },
   {
     title: '1969 Volkswagon Beetle',
