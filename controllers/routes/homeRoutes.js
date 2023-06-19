@@ -1,23 +1,65 @@
-const router = require('express').Router();
+const express = require('express');
+const router = express.Router();
+const { Op } = require('sequelize');
+const Vehicles = require('../../models/Vehicles');
 
 router.get('/', async (req, res) => {
-
-    res.render('homepage', {
-      loggedIn: req.session.loggedIn,
-    });
-  } 
-);
-router.get('/product', async (req, res) => {
-  res.render('product');
+  res.render('homepage', {
+    loggedIn: req.session.loggedIn,
+  });
 });
+
+router.get('/search', async (req, res) => {
+  try {
+    const { search } = req.query;
+    const keywords = search.split(' ');
+
+    const results = await Vehicles.findAll({
+      where: {
+        [Op.and]: keywords.map((keyword) => ({
+          [Op.or]: [
+            { year: keyword },
+            { manufacturer: { [Op.like]: `%${keyword}%` } },
+            { model: { [Op.like]: `%${keyword}%` } }
+          ]
+        }))
+      }
+    });
+
+    const vehicleResults = results.map((vehicle) => vehicle.toJSON());
+
+    res.render('product', { results: vehicleResults, loggedIn: req.session.loggedIn });
+    console.log(vehicleResults);
+  } catch (error) {
+    console.log(error);
+    res.status(500).json({ error: 'Internal Server Error' });
+  }
+});
+
 router.get('/about', async (req, res) => {
-  res.render('about');
+  res.render('about', {
+    loggedIn: req.session.loggedIn,
+  });
+});
+router.get('/profile', async (req, res) => {
+  res.render('profile', {
+    loggedIn: req.session.loggedIn,
+  });
+});
+router.get('/garage', async (req, res) => {
+  res.render('garage', {
+    loggedIn: req.session.loggedIn,
+  });
 });
 router.get('/features', async (req, res) => {
-  res.render('features');
+  res.render('features', {
+    loggedIn: req.session.loggedIn,
+  });
 });
 router.get('/pricing', async (req, res) => {
-  res.render('pricing');
+  res.render('pricing', {
+    loggedIn: req.session.loggedIn,
+  });
 });
 router.get('/login', (req, res) => {
   res.render('login');
@@ -38,6 +80,52 @@ router.get('/login', (req, res) => {
 });
 
 module.exports = router;
+
+
+
+
+
+
+// const router = require('express').Router();
+// const { Vehicles } = require('../../models');
+
+// router.get('/', async (req, res) => {
+//   try {
+//     const { search } = req.query;
+//     let vehicles = [];
+
+//     if (search) {
+//       // Split the search input into individual values
+//       const searchValues = search.split(' ');
+
+//       // Build the query condition for Sequelize
+//       const condition = {
+//         [Op.and]: searchValues.map((value) => ({
+//           [Op.or]: [
+//             { model: { [Op.like]: %${value}% } },
+//             { make: { [Op.like]: %${value}% } },
+//             { year: { [Op.eq]: value } },
+//           ],
+//         })),
+//       };
+
+//       // Query the vehicles table based on the search condition
+//       vehicles = await Vehicles.findAll({ where: condition });
+//     }
+
+//     res.render('homepage', {
+//       loggedIn: req.session.loggedIn,
+//       vehicles,
+//     });
+//   } catch (err) {
+//     console.error(err);
+//     res.status(500).json({ message: 'Server Error' });
+//   }
+// });
+
+// module.exports = router;
+
+
 
 
 
@@ -63,6 +151,14 @@ module.exports = router;
 // });
 // router.get('/pricing', async (req, res) => {
 //   res.render('pricing');
+// });
+
+// router.get('/login', (req, res) => {
+//   res.render('login');
+// });
+
+// router.get('/signup', (req, res) => {
+//   res.render('signup');
 // });
 
 // // router.get('/', withAuth, async (req, res) => {

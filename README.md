@@ -30,8 +30,7 @@ GitHub repository: https://github.com/Ienxternal/wheelwisdom
 (add screenshots)
 
 ## User Story
-
-As a car enthusiast, I want to sign up for Wheel Wisdom so that I can explore and leave reviews on cars:..............................
+As a car enthusiast, I want to stay updated on industry trends, explore car listings, and share insights with a vibrant community of car enthusiasts. I browse through a vast collection of cars, reading detailed reviews for real-world insights on performance, reliability, and features. By contributing my own experiences and engaging in discussions, I unlock the wisdom of wheels and make informed car-buying decisions. Wheel Wisdom transforms the car-buying experience, providing a comprehensive platform for passionate enthusiasts like me.
 
 
 ## Installation - How to use "WheelWisdom"
@@ -50,7 +49,7 @@ WheelWisdom was built with the following technologies:
 - Node.js
 - Express.js
 - MySQL
-    
+
 ## Future Development 
 
 
@@ -68,4 +67,6 @@ Wheel Wisdom was built by:
 
 
 ## License
+
+Wheel Wisdom is licenced under the MIT license.
 

@@ -11,7 +11,7 @@ Reviews.init(
         primaryKey: true,
         autoIncrement: true,
     },
-    review_content: {
+    review: {
         type: DataTypes.TEXT,
         allowNull: false,
     },
@@ -22,10 +22,10 @@ Reviews.init(
             key: 'id',
         },
     },
-    reviewed_vehicle_id: {
+    vehicle_id: {
         type: DataTypes.INTEGER,
         references: {
-            model: 'vehicle',
+            model: 'vehicles',
             key: 'id',
         },
     },
