@@ -1,11 +1,33 @@
 const router = require('express').Router();
-const { Reviews } = require('../../models');
+const Reviews = require('../../models/Reviews');
 
 // CREATE a new review
 router.post('/', async (req, res) => {
     try {
-        const review = await Reviews.create(req.body);
-        res.status(200).json(review);
+        // Retrieve the user input from the request body
+        const { comment, following_user_id, vehicle_id } = req.body;
+
+        // Sanitize and validate the input (implement your own logic here)
+        // For example, you can check if the review is not empty and the following_user_id and vehicle_id exist
+        
+        // Example validation: Check if the review is not empty
+        if (!review) {
+            return res.status(400).json({ error: 'Review cannot be empty' });
+        }
+
+        // Example validation: Check if the following_user_id and vehicle_id exist
+        if (!following_user_id || !vehicle_id) {
+            return res.status(400).json({ error: 'Invalid following_user_id or vehicle_id' });
+        }
+
+        // Make the POST request to your review database using Sequelize
+        const newReview = await Reviews.create({
+            comment,
+            following_user_id,
+            vehicle_id
+        });
+
+        res.status(200).json(newReview);
     } catch (err) {
         res.status(500).json(err);
     }
