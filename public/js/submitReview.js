@@ -1,11 +1,17 @@
+const vehicleId = document.querySelector('[data-vehicle-id]').getAttribute('data-vehicle-id');
+const usernameInput = document.getElementById('username-input');
+
 // Retrieve reviews and display them on page load
 window.addEventListener('load', async () => {
   try {
     const response = await fetch('/reviews');
     const reviews = await response.json();
     
-    // Display the reviews on the page
-    displayReviews(reviews);
+    const filteredReviews = reviews.filter(review => review.vehicle_id === parseInt(vehicleId));
+    console.log("dndnfjsdnjfs000000000000000000000000000000000000000000000000");
+    console.log(filteredReviews);
+    // Display the filtered reviews on the page
+    displayReviews(filteredReviews);
   } catch (error) {
     console.error('Error fetching reviews:', error);
   }
@@ -44,6 +50,7 @@ reviewForm.addEventListener('submit', (event) => {
   event.preventDefault();
 
   const reviewText = reviewInput.value.trim();
+  const username = usernameInput.value;
 
   if (reviewText !== '') {
     const reviewElement = document.createElement('p');
@@ -52,11 +59,13 @@ reviewForm.addEventListener('submit', (event) => {
 
     reviewInput.value = ''; // Clear the input field
   }
-  
+
+  console.log("THIS IS IN THE SUBMIT JS@@@@@@@@")
+  console.log(vehicleId)
   const reviewData = {
     review: reviewText,
-    vehicle_id: 1, // Replace with the appropriate vehicle ID
-    following_user_id: 1 // Replace with the appropriate user ID
+    vehicle_id: vehicleId, // Replace with the appropriate vehicle ID
+    r_user: username // Replace with the appropriate user ID
   };
 
   if (!reviewData.review) {
@@ -107,7 +116,7 @@ reviewForm.addEventListener('submit', (event) => {
 //   const reviewData = {
 //     review: reviewText,
 //     vehicle_id: 1, // Replace with the appropriate vehicle ID
-//     following_user_id: 1 // Replace with the appropriate user ID
+//     r_user: 1 // Replace with the appropriate user ID
 //   };
 
 //   if (!reviewData.review) {
@@ -150,7 +159,7 @@ reviewForm.addEventListener('submit', (event) => {
 //   const reviewData = {
 //     review: reviewInput.value.trim(),
 //     vehicle_id: 1, // Replace with the appropriate vehicle ID
-//     following_user_id: 1 // Replace with the appropriate user ID
+//     r_user: 1 // Replace with the appropriate user ID
 //   };
 
 //   if (!reviewData.review) {

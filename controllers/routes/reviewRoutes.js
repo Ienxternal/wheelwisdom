@@ -15,19 +15,19 @@ router.get('/', async (req, res) => {
 // CREATE a new review
 router.post('/', async (req, res) => {
   try {
-    const { review, following_user_id, vehicle_id } = req.body;
+    const { review, r_user, vehicle_id } = req.body;
 
     if (!review) {
       return res.status(400).json({ error: 'Review cannot be empty' });
     }
 
-    if (!following_user_id || !vehicle_id) {
-      return res.status(400).json({ error: 'Invalid following_user_id or vehicle_id' });
+    if (!r_user || !vehicle_id) {
+      return res.status(400).json({ error: 'Invalid r_user or vehicle_id' });
     }
 
     const newReview = await Reviews.create({
       review,
-      following_user_id,
+      r_user,
       vehicle_id
     });
 
@@ -115,25 +115,25 @@ module.exports = router;
 // router.post('/', async (req, res) => {
 //   try {
 //     // Retrieve the user input from the request body
-//     const { review, following_user_id, vehicle_id } = req.body;
+//     const { review, r_user, vehicle_id } = req.body;
 
 //     // Sanitize and validate the input (implement your own logic here)
-//     // For example, you can check if the review is not empty and the following_user_id and vehicle_id exist
+//     // For example, you can check if the review is not empty and the r_user and vehicle_id exist
 
 //     // Example validation: Check if the review is not empty
 //     if (!review) {
 //       return res.status(400).json({ error: 'Review cannot be empty' });
 //     }
 
-//     // Example validation: Check if the following_user_id and vehicle_id exist
-//     if (!following_user_id || !vehicle_id) {
-//       return res.status(400).json({ error: 'Invalid following_user_id or vehicle_id' });
+//     // Example validation: Check if the r_user and vehicle_id exist
+//     if (!r_user || !vehicle_id) {
+//       return res.status(400).json({ error: 'Invalid r_user or vehicle_id' });
 //     }
 
 //     // Make the POST request to your review database using Sequelize
 //     const newReview = await Reviews.create({
 //       review,
-//       following_user_id,
+//       r_user,
 //       vehicle_id
 //     });
 
@@ -153,25 +153,25 @@ module.exports = router;
 // // router.post('/', async (req, res) => {
 // //     try {
 // //         // Retrieve the user input from the request body
-// //         const { review, following_user_id, vehicle_id } = req.body;
+// //         const { review, r_user, vehicle_id } = req.body;
 
 // //         // Sanitize and validate the input (implement your own logic here)
-// //         // For example, you can check if the review is not empty and the following_user_id and vehicle_id exist
+// //         // For example, you can check if the review is not empty and the r_user and vehicle_id exist
         
 // //         // Example validation: Check if the review is not empty
 // //         if (!review) {
 // //             return res.status(400).json({ error: 'Review cannot be empty' });
 // //         }
 
-// //         // Example validation: Check if the following_user_id and vehicle_id exist
-// //         if (!following_user_id || !vehicle_id) {
-// //             return res.status(400).json({ error: 'Invalid following_user_id or vehicle_id' });
+// //         // Example validation: Check if the r_user and vehicle_id exist
+// //         if (!r_user || !vehicle_id) {
+// //             return res.status(400).json({ error: 'Invalid r_user or vehicle_id' });
 // //         }
 
 // //         // Make the POST request to your review database using Sequelize
 // //         const newReview = await Reviews.create({
 // //             review,
-// //             following_user_id,
+// //             r_user,
 // //             vehicle_id
 // //         });
 

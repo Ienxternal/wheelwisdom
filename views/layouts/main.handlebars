@@ -16,6 +16,7 @@
               <a href="/">
                 <span class="sr-only">Your Company</span>
                 <img class="h-8 w-auto sm:h-10" src="/images/owls1icon.png" alt="">
+                <input type="hidden" id="username-input" name="username" value="{{username}}">
               </a>
               <div class="-mr-2 flex items-center md:hidden">
                 <button type="button" class="focus-ring-inset inline-flex items-center justify-center rounded-md bg-gray-900 p-2 text-gray-400 hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-white" aria-expanded="false">
@@ -65,7 +66,7 @@
       <img class="h-8 w-8 rounded-full" src="https://images.pexels.com/photos/106685/pexels-photo-106685.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="">
     </div>
     <div class="-mt-1 rounded-t-md px-4 py-2 text-sm text-gray-700">
-      Welcome $User!
+      Welcome {{username}}!
     </div>
   </div>
 

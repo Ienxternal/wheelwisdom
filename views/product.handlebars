@@ -10,7 +10,7 @@
       <!-- Product image -->
       <div class="lg:col-span-4 lg:row-end-1">
         <div class="aspect-h-3 aspect-w-4 overflow-hidden rounded-lg bg-gray-100">
-          <img src="/images/1981-Datsun-B-210.jpg" alt="Sample of 30 icons with friendly and fun details in outline, filled, and brand color styles." class="object-cover object-center">
+          <img src="/images/{{filename}}" alt="Sample of 30 icons with friendly and fun details in outline, filled, and brand color styles." class="object-cover object-center">
         </div>
       </div>
 
@@ -20,7 +20,7 @@
           <div class="mt-4">
             <h1 class="text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl">{{year}} {{manufacturer}} {{model}}</h1>
             <h2 id="information-heading" class="sr-only">Product information</h2>
-            <p class="mt-2 text-sm text-gray-500">Lorem ipsum dolor sit amet.</p>
+            <p class="mt-2 text-sm text-gray-500" data-vehicle-id="{{this.id}}"><p>Vehicle ID: {{this.id}}</p></p>
           </div>
 
           <div>

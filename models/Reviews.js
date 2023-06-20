@@ -15,12 +15,9 @@ Reviews.init(
         type: DataTypes.TEXT,
         allowNull: false,
     },
-    following_user_id: {
-        type: DataTypes.INTEGER,
-        references: {
-            model: 'user',
-            key: 'id',
-        },
+    r_user: {
+        type: DataTypes.TEXT,
+        allowNull: false,
     },
     vehicle_id: {
         type: DataTypes.INTEGER,
