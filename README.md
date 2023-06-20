@@ -52,6 +52,10 @@ WheelWisdom was built with the following technologies:
 - TailWind
 - Handlebars.js
 - Node.js
+- JSON
+- Bcrypt
+- Sequelize
+- Node.js
 - Express.js
 - MySQL
 
