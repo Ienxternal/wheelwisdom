@@ -46,7 +46,7 @@ Vehicles.init(
         review2: {
             type: DataTypes.STRING,
             allowNull: false, 
-        },
+        }
     },
     {
         sequelize,

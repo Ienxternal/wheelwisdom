@@ -5,10 +5,10 @@
     "model": "B210",
     "year": 1981,
     "filename": "1981-Datsun-B-210.jpg",
-    "highlights":"Reliable and Fuel-Efficient Compact and Agile Classic Retro Charm",
-    "discription":"This compact car embodies reliability and fuel efficiency, making it a practical choice for everyday commuting. With its compact size and agile handling, it offers a nimble and enjoyable driving experience, perfect for urban environments.",
-    "review1":"I've been a proud owner for years, and it's been a reliable companion. The simple yet sturdy design, coupled with its efficient engine, makes it a practical and economical choice. The compact size is perfect for city driving, and the fuel efficiency is impressive. It may not have all the bells and whistles of modern cars, but its reliability and nostalgia make it a true classic.",
-    "review2":"true gem from the past. Its compact size makes it incredibly nimble and easy to maneuver in tight spaces. The fuel efficiency is exceptional, allowing me to save on gas without compromising on performance. While the interior may not be as luxurious as modern cars, it has a charm of its own. If you're a fan of vintage cars and looking for a reliable and fun-to-drive vehicle, the 1981 Datsun B210 is worth considering." 
+    "highlights": "Reliable and Fuel-Efficient Compact and Agile Classic Retro Charm",
+    "description": "This compact car embodies reliability and fuel efficiency, making it a practical choice for everyday commuting. With its compact size and agile handling, it offers a nimble and enjoyable driving experience, perfect for urban environments.",
+    "review1": "I've been a proud owner for years, and it's been a reliable companion. The simple yet sturdy design, coupled with its efficient engine, makes it a practical and economical choice. The compact size is perfect for city driving, and the fuel efficiency is impressive. It may not have all the bells and whistles of modern cars, but its reliability and nostalgia make it a true classic.",
+    "review2": "true gem from the past. Its compact size makes it incredibly nimble and easy to maneuver in tight spaces. The fuel efficiency is exceptional, allowing me to save on gas without compromising on performance. While the interior may not be as luxurious as modern cars, it has a charm of its own. If you're a fan of vintage cars and looking for a reliable and fun-to-drive vehicle, the 1981 Datsun B210 is worth considering." 
 },
 {
     "bodyType": "2-door",
@@ -16,10 +16,10 @@
     "model": "Beetle",
     "year": 1969,
     "filename": "1969-volkswagon-beetle.jpg",
-    "highlights":"Iconic and Timeless Design Fun and Easy-to-Drive Air-Cooled Classic Car",
-    "discription":"This iconic compact car features a charming and timeless design, offering a fun and nostalgic driving experience. With its air-cooled engine and classic appeal, it captures the hearts of car enthusiasts, showcasing simplicity, reliability, and a unique personality on the road.",
-    "review1":"Owning a 1969 Volkswagen Beetle has been an absolute joy. This iconic car exudes character and charm like no other. Its compact size and nimble handling make it perfect for zipping through city streets. The air-cooled engine delivers a unique driving experience, and the simple yet functional interior takes you back in time. If you're a fan of vintage cars, the 1969 Volkswagen Beetle is a classic that never goes out of style.",
-    "review2":"The 1969 compact car is a true classic that turns heads with its distinctive rounded body and rear-mounted engine. Despite its age, this vintage gem is surprisingly reliable, easy to maintain, and fuel-efficient. If you're seeking a vintage car with timeless appeal, this 1969 model is a fantastic choice."
+    "highlights": "Iconic and Timeless Design Fun and Easy-to-Drive Air-Cooled Classic Car",
+    "description": "This iconic compact car features a charming and timeless design, offering a fun and nostalgic driving experience. With its air-cooled engine and classic appeal, it captures the hearts of car enthusiasts, showcasing simplicity, reliability, and a unique personality on the road.",
+    "review1": "Owning a 1969 Volkswagen Beetle has been an absolute joy. This iconic car exudes character and charm like no other. Its compact size and nimble handling make it perfect for zipping through city streets. The air-cooled engine delivers a unique driving experience, and the simple yet functional interior takes you back in time. If you're a fan of vintage cars, the 1969 Volkswagen Beetle is a classic that never goes out of style.",
+    "review2": "The 1969 compact car is a true classic that turns heads with its distinctive rounded body and rear-mounted engine. Despite its age, this vintage gem is surprisingly reliable, easy to maintain, and fuel-efficient. If you're seeking a vintage car with timeless appeal, this 1969 model is a fantastic choice."
 },
 {
     "bodyType": "Truck",
@@ -27,10 +27,10 @@
     "model": "F350",
     "year": 2017,
     "filename": "2017-Ford-F350.png",
-    "highlights":"Powerful Towing and Hauling Spacious and Well-Equipped Interior Robust and Reliable Performance",
-    "discription":"This heavy-duty pickup truck combines robust power, exceptional towing capabilities, and a spacious interior. With its rugged design and advanced features, it offers a reliable and versatile solution for tackling demanding tasks and providing a comfortable ride.",
-    "review1":"an exceptional truck that combines power, capability, and comfort. Its robust engine provides ample towing and hauling capacity, making it perfect for heavy-duty tasks. The spacious and well-appointed interior offers a comfortable and refined driving experience. ",
-    "review2":"This truck is a true workhorse with incredible towing capability and payload capacity. The ride quality is surprisingly smooth for such a powerful vehicle, and the interior is well-designed and packed with convenient features. "
+    "highlights": "Powerful Towing and Hauling Spacious and Well-Equipped Interior Robust and Reliable Performance",
+    "description": "This heavy-duty pickup truck combines robust power, exceptional towing capabilities, and a spacious interior. With its rugged design and advanced features, it offers a reliable and versatile solution for tackling demanding tasks and providing a comfortable ride.",
+    "review1": "The spacious and well-appointed interior offers a comfortable and refined driving experience. ",
+    "review2": "This truck is a true workhorse with incredible towing capability and payload capacity. The ride quality is surprisingly smooth for such a powerful vehicle, and the interior is well-designed and packed with convenient features. "
 },
 {
     "bodyType": "Sports Car",
@@ -38,10 +38,10 @@
     "model": "Corvette Stingray",
     "year": 1970,
     "filename": "1970-corvette-chronology.jpg",
-    "highlights":"Striking and Iconic Design, V8 Power and Performance, Thrilling and Agile Handling",
-    "discription":"This iconic sports car showcases a sleek and striking design, powerful performance, and agile handling. With its distinctive body lines and roaring V8 engine, it embodies the spirit of American muscle cars, delivering an exhilarating and thrilling driving experience.",
-    "review1":"The 1970 Corvette Stingray is a classic beauty that offers stunning design and exhilarating performance. With its sleek body, powerful V8 engine, and comfortable interior, it delivers an unforgettable driving experience.",
-    "review2":"While the 1970 Corvette Stingray impresses with its design and performance, it falls short in terms of reliability and practicality. The inconsistent build quality, frequent mechanical issues, and limited interior space make it less ideal for everyday use."
+    "highlights": "Striking and Iconic Design, V8 Power and Performance, Thrilling and Agile Handling",
+    "description": "This iconic sports car showcases a sleek and striking design, powerful performance, and agile handling. With its distinctive body lines and   roaring V8 engine, it embodies the spirit of American muscle cars, delivering an exhilarating and thrilling driving experience.",
+    "review1": "The 1970 Corvette Stingray is a classic beauty that offers stunning design and exhilarating performance. With its sleek body, powerful V8 engine, and comfortable interior, it delivers an unforgettable driving experience.",
+    "review2": "While the 1970 Corvette Stingray impresses with its design and performance, it falls short in terms of reliability and practicality. The inconsistent build quality, frequent mechanical issues, and limited interior space make it less ideal for everyday use."
 },
 {
     "bodyType": "Muscle Car",
@@ -49,10 +49,10 @@
     "model": "Mustang Boss 302",
     "year": 1969,
     "filename": "1969-ford-mustang-boss-302.jpeg",
-    "highlights":"Muscular and Aggressive Styling High-Performance V8 Engine Racing-Inspired Performance Capabilities",
-    "discription":"This legendary American muscle car boasts a powerful engine, iconic design, and exhilarating performance. With its timeless appeal and roaring V8, it represents the epitome of classic automotive style and performance, captivating enthusiasts and leaving a lasting impression wherever it goes.",
-    "review1":"an absolute gem from the golden age of American muscle cars. This legendary vehicle offers a combination of raw power and stunning aesthetics. The roaring V8 engine delivers impressive performance, while the iconic design and racing-inspired features make it a true collector's item. ",
-    "review2":"a dream come true. This iconic muscle car is a true legend on the road. The powerful V8 engine delivers exhilarating performance, and the aggressive styling turns heads wherever I go. "
+    "highlights": "Muscular and Aggressive Styling High-Performance V8 Engine Racing-Inspired Performance Capabilities",
+    "description": "This legendary American muscle car boasts a powerful engine, iconic design, and exhilarating performance. With its timeless appeal and roaring V8, it represents the epitome of classic automotive style and performance, captivating enthusiasts and leaving a lasting impression wherever it goes.",
+    "review1": "an absolute gem from the golden age of American muscle cars. This legendary vehicle offers a combination of raw power and stunning aesthetics. The roaring V8 engine delivers impressive performance, while the iconic design and racing-inspired features make it a true collector's item. ",
+    "review2": "a dream come true. This iconic muscle car is a true legend on the road. The powerful V8 engine delivers exhilarating performance, and the aggressive styling turns heads wherever I go. "
 },
 {
     "bodyType": "Classic Sedan",
@@ -60,10 +60,10 @@
     "model": "300SL Gullwing",
     "year": 1955,
     "filename": "1955_mercedes-benz_300sl-gullwing_t7.jpg",
-    "highlights":"Captivating and Timeless Design Iconic Gullwing Door Configuration Powerful and Smooth Performance",
-    "discription":"",
-    "review1":"Owning this iconic classic car has been a remarkable experience. Its distinctive design, with its upward-opening doors, is truly captivating. The powerful engine and superb handling deliver an exhilarating driving experience, while the luxurious interior exudes elegance and sophistication. If you're a fan of vintage automobiles, this model is a true automotive masterpiece that never fails to turn heads.",
-    "review2":" a captivating design and a rich heritage, I found it lacking in practicality and comfort. The cramped interior space and limited storage options make it less than ideal for everyday use. Additionally, the maintenance and repair costs can be exorbitant, making it a challenging ownership experience. Unless you're a die-hard collector or enthusiast, there are more modern and practical options available in the market."
+    "highlights": "Captivating and Timeless Design Iconic Gullwing Door Configuration Powerful and Smooth Performance",
+    "description": "an iconic and timeless sports car that exudes elegance and performance. With its distinct gullwing doors and powerful engine, it represents the pinnacle of automotive engineering and design, captivating enthusiasts and collectors with its legendary status.",
+    "review1": "Owning this iconic classic car has been a remarkable experience. Its distinctive design, with its upward-opening doors, is truly captivating. The powerful engine and superb handling deliver an exhilarating driving experience, while the luxurious interior exudes elegance and sophistication. If you're a fan of vintage automobiles, this model is a true automotive masterpiece that never fails to turn heads.",
+    "review2": " a captivating design and a rich heritage, I found it lacking in practicality and comfort. The cramped interior space and limited storage options make it less than ideal for everyday use. Additionally, the maintenance and repair costs can be exorbitant, making it a challenging ownership experience. Unless you're a die-hard collector or enthusiast, there are more modern and practical options available in the market."
 },
 {
     "bodyType": "Hatchback",
@@ -82,10 +82,10 @@
     "model": "Camry",
     "bodyType": "Sedan",
     "filename": "2020toyotacamry.png",
-    "highlights":"Stylish and Modern Design Smooth and Efficient Performance Advanced Safety and Technology",
-    "discription":"This midsize sedan combines style, performance, and advanced features, providing a smooth and comfortable ride for both driver and passengers. With its reliable reputation and innovative technology, it offers a well-rounded and enjoyable driving experience, suitable for both everyday commuting and longer journeys.",
-    "review1":"a fantastic sedan that excels in reliability, comfort, and fuel efficiency. Its sleek design, smooth ride, and spacious interior make it a joy to drive and ride in. With advanced safety features and user-friendly technology, the Camry offers a well-rounded and enjoyable driving experience for both daily commuting and longer journeys.",
-    "review2":" offers decent reliability and practicality, it lacks in terms of sportiness and engaging driving dynamics. The handling can feel a bit uninspiring, and the acceleration may not be as exhilarating as some competitors. Additionally, the interior materials and design, while functional, may not match the premium feel of certain rivals in the same price range."
+    "highlights": "Stylish and Modern Design Smooth and Efficient Performance Advanced Safety and Technology",
+    "description": "This midsize sedan combines style, performance, and advanced features, providing a smooth and comfortable ride for both driver and passengers. With its reliable reputation and innovative technology, it offers a well-rounded and enjoyable driving experience, suitable for both everyday commuting and longer journeys.",
+    "review1": "a fantastic sedan that excels in reliability, comfort, and fuel efficiency. Its sleek design, smooth ride, and spacious interior make it a joy to drive and ride in. With advanced safety features and user-friendly technology, the Camry offers a well-rounded and enjoyable driving experience for both daily commuting and longer journeys.",
+    "review2": " offers decent reliability and practicality, it lacks in terms of sportiness and engaging driving dynamics. The handling can feel a bit uninspiring, and the acceleration may not be as exhilarating as some competitors. Additionally, the interior materials and design, while functional, may not match the premium feel of certain rivals in the same price range."
 },
 {
     "year": 2019,
@@ -94,7 +94,7 @@
     "bodyType": "Sedan",
     "filename": "2019hondacivic.png",
     "highlights":"Sporty and Aerodynamic Design Fuel-Efficient and Reliable Performance Advanced Safety and Technology Features",
-    "discription":"This compact car offers a reliable and fuel-efficient driving experience with a comfortable interior and practical features. Known for its dependability and value, it presents a convenient and economical choice for daily commuting and urban driving.",
+    "description":"This compact car offers a reliable and fuel-efficient driving experience with a comfortable interior and practical features. Known for its dependability and value, it presents a convenient and economical choice for daily commuting and urban driving.",
     "review1":" a new standard in fuel efficiency. With its advanced engineering and aerodynamic design, it delivers exceptional mileage, helping you go the extra mile on every tank of fuel.",
     "review2":"The sleek exterior design caught my attention, and the driving experience has been fantastic. It offers a smooth ride, and the advanced technology features, such as the touchscreen infotainment system, make every journey enjoyable."
 },
@@ -105,7 +105,7 @@
     "bodyType": "Sedan",
     "filename": "2021teslamodel3.jpg",
     "highlights":"Cutting-Edge Electric Performance Sleek and Minimalist Design Advanced Autopilot and Technology",
-    "discription":"This electric vehicle embodies modern design, advanced technology, and impressive performance, offering a sustainable and exhilarating driving experience. With its sleek appearance and cutting-edge features, it represents the future of automotive innovation and eco-friendly transportation.",
+    "description":"This electric vehicle embodies modern design, advanced technology, and impressive performance, offering a sustainable and exhilarating driving experience. With its sleek appearance and cutting-edge features, it represents the future of automotive innovation and eco-friendly transportation.",
     "review1":"The 2021 Tesla Model 3 is a game-changer in the world of electric vehicles. With its sleek design, impressive acceleration, and long electric range, it offers a truly exhilarating driving experience. The advanced autopilot features and cutting-edge technology inside the cabin elevate the overall driving convenience and safety. If you're looking for a stylish and eco-friendly car that combines performance with sustainability, the Model 3 is an excellent choice.",
     "review2":"offers impressive electric range and futuristic technology, it may not suit everyone's needs. The lack of traditional buttons and controls in the interior can be initially overwhelming for some drivers. Additionally, the reliance on touchscreen interfaces for nearly all functions may prove distracting and less intuitive while driving. Furthermore, the availability of charging stations in certain areas may still be limited, requiring careful planning for longer trips."
 },
@@ -116,7 +116,7 @@
     "bodyType": "Truck",
     "filename": "2022fordf150.png",
     "highlights":"Powerful and Versatile Workhorse Advanced Technology and Connectivity Spacious and Comfortable Interior",
-    "discription":"This pickup truck presents a blend of power, versatility, and cutting-edge features, providing a robust and capable solution for hauling and daily driving needs.",
+    "description":"This pickup truck presents a blend of power, versatility, and cutting-edge features, providing a robust and capable solution for hauling and daily driving needs.",
     "review1":"a remarkable pickup truck that excels in power, versatility, and technology. With its rugged yet refined design, it offers a commanding presence on and off the road. The range of available engines provides impressive towing and hauling capabilities, while the spacious and well-appointed interior offers modern comfort and convenience. With advanced features like the Pro Power Onboard system and SYNC infotainment, the F-150 delivers a truly exceptional driving experience.",
     "review2":"The larger size of the truck can make maneuvering in tight spaces a bit challenging. Additionally, the abundance of available features and options can significantly increase the overall cost, making it less accessible for budget-conscious buyers. It's important to carefully consider individual needs and priorities before committing to the F-150."
 },
@@ -137,9 +137,9 @@
     "model": "Civic",
     "bodyType": "Coupe",
     "filename": "1999-honda-civic-si-coupe.jpg",
-    "highlights":"Efficient and Reliable Commuter Compact and Easy to Maneuver Comfortable and Practical Interior",
-    "discription":"This compact coupe from Honda offers reliable performance, excellent fuel efficiency, and a comfortable interior. It is known for its practicality, making it a popular choice for those seeking a dependable and efficient vehicle. With its compact size and reliable reputation, this Honda coupe provides a convenient and enjoyable driving experience.",
-    "review1":"With its compact size and nimble handling, it's perfect for city driving and parking in tight spaces. The efficient engine delivers impressive fuel economy, while the comfortable interior and quality build make it a practical and enjoyable daily driver.",
-    "review2":"While the 1999 Honda Civic Coupe is known for its reliability, it may feel underpowered and lack some modern features compared to newer models. The interior design and materials may feel a bit outdated, and road noise can be noticeable. Additionally, the limited cargo space and rear-seat legroom may be a drawback for those who frequently carry passengers or need to transport larger items. However, considering its affordability and long-lasting reputation, it remains a popular choice for budget-conscious individuals."
+    "highlights": "Efficient and Reliable Commuter Compact and Easy to Maneuver Comfortable and Practical Interior",
+    "description": "This compact coupe from Honda offers reliable performance, excellent fuel efficiency, and a comfortable interior. It is known for its practicality, making it a popular choice for those seeking a dependable and efficient vehicle. With its compact size and reliable reputation, this Honda coupe provides a convenient and enjoyable driving experience.",
+    "review1": "With its compact size and nimble handling, it's perfect for city driving and parking in tight spaces. The efficient engine delivers impressive fuel economy, while the comfortable interior and quality build make it a practical and enjoyable daily driver.",
+    "review2": "While the 1999 Honda Civic Coupe is known for its reliability, it may feel underpowered and lack some modern features compared to newer models. The interior design and materials may feel a bit outdated, and road noise can be noticeable. Additionally, the limited cargo space and rear-seat legroom may be a drawback for those who frequently carry passengers or need to transport larger items. However, considering its affordability and long-lasting reputation, it remains a popular choice for budget-conscious individuals."
 }
 ]
