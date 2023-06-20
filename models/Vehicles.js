@@ -31,6 +31,22 @@ Vehicles.init(
             type: DataTypes.STRING,
             allowNull: false,
         },
+        highlights: {
+            type: DataTypes.STRING,
+            allowNull: false,
+        },
+        description: {
+            type: DataTypes.STRING,
+            allowNull: false, 
+        },
+        review1: {
+            type: DataTypes.STRING,
+            allowNull: false, 
+        },
+        review2: {
+            type: DataTypes.STRING,
+            allowNull: false, 
+        },
     },
     {
         sequelize,
