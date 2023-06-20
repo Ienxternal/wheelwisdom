@@ -4,13 +4,16 @@ const { Op } = require('sequelize');
 const Vehicles = require('../../models/Vehicles');
 
 router.get('/', async (req, res) => {
+  const username = req.session.username;
   res.render('homepage', {
     loggedIn: req.session.loggedIn,
+    username: username
   });
 });
 
 router.get('/search', async (req, res) => {
   try {
+    const username = req.session.username;
     const { search } = req.query;
     const keywords = search.split(' ');
 
@@ -28,8 +31,15 @@ router.get('/search', async (req, res) => {
 
     const vehicleResults = results.map((vehicle) => vehicle.toJSON());
 
-    res.render('product', { results: vehicleResults, loggedIn: req.session.loggedIn });
-    console.log(vehicleResults);
+    res.render('product', {
+      results: vehicleResults,
+      loggedIn: req.session.loggedIn,
+      vehicleId: vehicleResults[0].id,
+      username: username
+    });
+    console.log(vehicleResults[0].id);
+    console.log("3434343343434343434343434");
+    console.log(vehicleResults[0].id);
   } catch (error) {
     console.log(error);
     res.status(500).json({ error: 'Internal Server Error' });
@@ -37,26 +47,31 @@ router.get('/search', async (req, res) => {
 });
 
 router.get('/about', async (req, res) => {
+  const username = req.session.username;
   res.render('about', {
     loggedIn: req.session.loggedIn,
   });
 });
 router.get('/profile', async (req, res) => {
+  const username = req.session.username;
   res.render('profile', {
     loggedIn: req.session.loggedIn,
   });
 });
 router.get('/garage', async (req, res) => {
+  const username = req.session.username;
   res.render('garage', {
     loggedIn: req.session.loggedIn,
   });
 });
 router.get('/features', async (req, res) => {
+  const username = req.session.username;
   res.render('features', {
     loggedIn: req.session.loggedIn,
   });
 });
 router.get('/pricing', async (req, res) => {
+  const username = req.session.username;
   res.render('pricing', {
     loggedIn: req.session.loggedIn,
   });

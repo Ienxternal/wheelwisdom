@@ -2,31 +2,31 @@
     {
         "review": "placeholder",
         "vehicle_id" : 1,
-        "following_user_id":1
+        "r_user":1
         
     },
     {
         "review": "placeholder",
         "vehicle_id" : 2,
-        "following_user_id":2
+        "r_user":2
         
     },
     {
         "review": "placeholder",
         "vehicle_id" : 3,
-        "following_user_id":3
+        "r_user":3
         
     },
     {
         "review": "placeholder",
         "vehicle_id" : 4,
-        "following_user_id":4
+        "r_user":4
         
     },
     {
         "review": "placeholder",
         "vehicle_id" : 5,
-        "following_user_id":5
+        "r_user":5
         
     }
 ]
