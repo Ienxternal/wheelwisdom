@@ -52,11 +52,23 @@ WheelWisdom was built with the following technologies:
 - TailWind
 - Handlebars.js
 - Node.js
+- JSON
+- Bcrypt
+- Sequelize
+- Node.js
 - Express.js
 - MySQL
 
 ## Future Development: 
 
+- Ability to rate vehicles with stars (or owls)
+- Verified reviews
+- Community forums
+- Meetups
+- Different pages for motorcycles, RVs, classic cars, etc.
+- Links to dealerships, car insurance…
+- Market value
+- Up vote/down vote
 
 
 ## Credits:
