@@ -1,3 +1,5 @@
+
+//WORKING CODE 6/20
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
