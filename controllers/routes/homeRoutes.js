@@ -28,21 +28,25 @@ router.get('/search', async (req, res) => {
         }))
       }
     });
-
     const vehicleResults = results.map((vehicle) => vehicle.toJSON());
-
     res.render('product', {
       results: vehicleResults,
       loggedIn: req.session.loggedIn,
       vehicleId: vehicleResults[0].id,
       username: username
     });
-    console.log(vehicleResults[0].id);
+    console.log(username);
     console.log("3434343343434343434343434");
-    console.log(vehicleResults[0].id);
+    console.log(username);
   } catch (error) {
     console.log(error);
-    res.status(500).json({ error: 'Internal Server Error' });
+    
+    res.render('404', {
+      loggedIn: req.session.loggedIn,
+    });
+
+
+    // res.status(500).json({ error: 'Internal Server Error' });
   }
 });
 
