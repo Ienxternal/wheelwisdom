@@ -32,19 +32,19 @@ Vehicles.init(
             allowNull: false,
         },
         highlights: {
-            type: DataTypes.STRING,
+            type: DataTypes.TEXT,
             allowNull: false,
         },
         description: {
-            type: DataTypes.STRING,
+            type: DataTypes.TEXT,
             allowNull: false, 
         },
         review1: {
-            type: DataTypes.STRING,
+            type: DataTypes.TEXT,
             allowNull: false, 
         },
         review2: {
-            type: DataTypes.STRING,
+            type: DataTypes.TEXT,
             allowNull: false, 
         }
     },
