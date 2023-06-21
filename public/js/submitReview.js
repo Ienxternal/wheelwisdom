@@ -36,8 +36,8 @@ function displayReviews(reviews) {
     // Append the review text to the review element
     reviewElement.appendChild(reviewText);
 
-    // Append the review element to the reviews container
-    reviewsContainer.appendChild(reviewElement);
+    // Prepend the review element to the reviews container
+    reviewsContainer.prepend(reviewElement);
   });
 }
 
@@ -46,16 +46,24 @@ const reviewForm = document.getElementById('review-form');
 const reviewInput = document.getElementById('review-input');
 const reviewsContainer = document.getElementById('reviewsContainer');
 
-reviewForm.addEventListener('submit', (event) => {
+reviewForm.addEventListener('submit', async (event) => {
   event.preventDefault();
 
   const reviewText = reviewInput.value.trim();
   const username = usernameInput.value;
 
   if (reviewText !== '') {
-    const reviewElement = document.createElement('p');
-    reviewElement.textContent = reviewText;
-    reviewsContainer.appendChild(reviewElement);
+    const reviewElement = document.createElement('div');
+    reviewElement.classList.add('review');
+
+    const reviewTextElement = document.createElement('p');
+    reviewTextElement.textContent = reviewText;
+
+    // Append the review text to the review element
+    reviewElement.appendChild(reviewTextElement);
+
+    // Prepend the review element to the reviews container
+    reviewsContainer.prepend(reviewElement);
 
     reviewInput.value = ''; // Clear the input field
   }
