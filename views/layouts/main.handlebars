@@ -4,6 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/css/output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap" rel="stylesheet">
   <script src="https://unpkg.com/tailwindcss-jit-cdn"></script>
 </head>
 <body>
@@ -14,7 +17,7 @@
           <div class="flex flex-1 items-center">
             <div class="flex w-full items-center justify-between md:w-auto">
               <a href="/">
-                <span class="sr-only">Your Company</span>
+                <span class="sr-only">Wheel Wisdom</span>
                 <img class="h-8 w-auto sm:h-10" src="/images/owls1icon.png" alt="">
                 <input type="hidden" id="username-input" name="username" value="{{username}}">
               </a>
@@ -27,13 +30,24 @@
                 </button>
               </div>
             </div>
+             {{#if loggedIn}}
             <div class="hidden space-x-8 md:ml-10 md:flex">
-              <a href="/features" class="text-base font-medium text-white hover:text-gray-300">Features</a>
-              <a href="/#testimonials" class="text-base font-medium text-white hover:text-gray-300">Testimonials</a>
-              <a href="/about" class="text-base font-medium text-white hover:text-gray-300">About</a>
-              <a href="/pricing" class="text-base font-medium text-white hover:text-gray-300">Pricing</a>
+              <a href="/" class="text-base font-maven text-white hover:text-gray-300">Home</a>
+              <a href="/garage" class="text-base font-maven text-white hover:text-gray-300">Dashboard</a>
+              <a href="/about" class="text-base font-maven text-white hover:text-gray-300">About</a>
+              <a href="/pricing" class="text-base font-maven text-white hover:text-gray-300">Upgrade</a>
             </div>
           </div>
+            {{else}}
+           <div class="hidden space-x-8 md:ml-10 md:flex">
+              <a href="/features" class="text-base font-maven text-white hover:text-gray-300">Features</a>
+              <a href="/#testimonials" class="text-base font-maven text-white hover:text-gray-300">Testimonials</a>
+              <a href="/about" class="text-base font-maven text-white hover:text-gray-300">About</a>
+              <a href="/pricing" class="text-base font-maven text-white hover:text-gray-300">Pricing</a>
+              </div>
+              </div>
+            {{/if}}
+          
           <div class="hidden md:flex md:items-center md:space-x-6">
             {{#if loggedIn}}
                 <div class="mx-auto max-w-7xl px-2 sm:px-4 lg:px-8">
@@ -42,7 +56,7 @@
           <div class="flex flex-1 justify-center px-2 lg:ml-6 lg:justify-end">
              <form action="/search1" method="GET">
             <div class="w-full max-w-lg lg:max-w-xs">
-              <label for="search" class="sr-only">Search</label>
+              <label for="search" class="sr-only font-maven">Search</label>
               <div class="relative">
                 <div class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
       <svg aria-hidden="true" class="w-5 h-5 text-gray-500 dark:text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"></path></svg>
@@ -75,14 +89,14 @@
 
 
     <div class="hover:bg-green-200 transition-colors duration-300">
-      <button class="block px-4 py-2 text-sm text-gray-700 focus:outline-none" role="menuitem" tabindex="-1" id="user-menu-item-0">Your Profile</button>
+      <button class="block px-4 py-2 text-sm text-gray-700 focus:outline-none font-maven" role="menuitem" tabindex="-1" id="user-menu-item-0">Your Profile</button>
     </div>
 <div class="hover:bg-green-200 transition-colors duration-300">
-  <a href="/garage" class="block px-4 py-2 text-sm text-gray-700 focus:outline-none" role="menuitem" tabindex="-1" id="user-menu-item-1">Your Garage</a>
+  <a href="/garage" class="block px-4 py-2 text-sm text-gray-700 focus:outline-none font-maven" role="menuitem" tabindex="-1" id="user-menu-item-1">Your Garage</a>
 </div>
 
     <div class="hover:bg-green-200 transition-colors duration-300">
-      <button class="block px-4 py-2 text-sm text-gray-700 focus:outline-none" role="menuitem" tabindex="-1" id="logout">Sign out</button>
+      <button class="block px-4 py-2 text-sm text-gray-700 focus:outline-none font-maven" role="menuitem" tabindex="-1" id="logout">Sign out</button>
     </div>
   </div>
 </div>
@@ -95,8 +109,8 @@
             {{!-- <button id="logout" class="rounded-full bg-tealowl4 px-3.5 py-2 text-sm font-semibold text-white shadow-sm transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-tealowl2 duration-300  focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-tealowl2">Logout</button> --}}
 
             {{else}}
-            <a href="/login" class="text-base font-medium text-white hover:text-gray-300">Log in</a>
-            <a href="/signup" class="rounded-full bg-tealowl4 px-3.5 py-2 text-sm font-semibold text-white shadow-sm transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-tealowl2 duration-300  focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-tealowl2">Sign Up</a>
+            <a href="/login" class="text-base font-maven text-white hover:text-gray-300">Log in</a>
+            <a href="/signup" class="rounded-full bg-tealowl4 px-3.5 py-2 text-sm font-maven text-white shadow-sm transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-tealowl2 duration-300  focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-tealowl2">Sign Up</a>
             {{/if}}
           </div>
         </nav>

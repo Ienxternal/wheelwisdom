@@ -74,7 +74,7 @@ rating.appendChild(starRatingContainer);
     
 
     const reviewTextElement = document.createElement('div');
-    reviewTextElement.classList.add('prose', 'prose-sm', 'mt-4', 'max-w-none', 'text-gray-500');
+    reviewTextElement.classList.add('prose', 'prose-sm', 'mt-4', 'max-w-none', 'text-gray-500', 'font-maven');
     const reviewText = document.createElement('p');
     reviewText.textContent = review.review;
     
@@ -144,7 +144,7 @@ for (let i = 0; i < 5; i++) {
 rating.appendChild(starRatingContainer);
 
     const reviewTextElement = document.createElement('div');
-    reviewTextElement.classList.add('prose', 'prose-sm', 'mt-4', 'max-w-none', 'text-gray-500');
+    reviewTextElement.classList.add('prose', 'prose-sm', 'mt-4', 'max-w-none', 'text-gray-500', 'font-maven');
     const reviewParagraph = document.createElement('p');
     reviewParagraph.textContent = reviewText;
 
