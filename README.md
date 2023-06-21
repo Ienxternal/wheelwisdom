@@ -61,7 +61,7 @@ WheelWisdom was built with the following technologies:
 
 ## Future Development: 
 
-- Ability to rate vehicles with stars (or owls)
+- Ability to rate vehicles with stars (or Owls) 
 - Verified reviews
 - Community forums
 - Meetups
