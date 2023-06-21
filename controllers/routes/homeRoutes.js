@@ -58,30 +58,35 @@ router.get('/about', async (req, res) => {
   const username = req.session.username;
   res.render('about', {
     loggedIn: req.session.loggedIn,
+    username: username
   });
 });
 router.get('/profile', async (req, res) => {
   const username = req.session.username;
   res.render('profile', {
     loggedIn: req.session.loggedIn,
+    username: username
   });
 });
 router.get('/garage', async (req, res) => {
   const username = req.session.username;
   res.render('garage', {
     loggedIn: req.session.loggedIn,
+    username: username
   });
 });
 router.get('/features', async (req, res) => {
   const username = req.session.username;
   res.render('features', {
     loggedIn: req.session.loggedIn,
+    username: username
   });
 });
 router.get('/pricing', async (req, res) => {
   const username = req.session.username;
   res.render('pricing', {
     loggedIn: req.session.loggedIn,
+    username: username
   });
 });
 router.get('/login', (req, res) => {
