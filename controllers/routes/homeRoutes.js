@@ -12,6 +12,10 @@ router.get('/', async (req, res) => {
 });
 
 router.get('/search', async (req, res) => {
+  if (!req.session.loggedIn) {
+    res.redirect('/pricing');
+  }
+  else {
   try {
     const username = req.session.username;
     const { search } = req.query;
@@ -45,7 +49,7 @@ router.get('/search', async (req, res) => {
       loggedIn: req.session.loggedIn,
     });
 
-
+  }
     // res.status(500).json({ error: 'Internal Server Error' });
   }
 });
