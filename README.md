@@ -1,4 +1,5 @@
-![Github license](https://img.shields.io/badge/license-MIT-blue.svg)
+<p align="center"><img alt="GitHub commit activity (branch)" src="https://img.shields.io/github/commit-activity/t/ienxternal/wheelwisdom"><img alt="GitHub" src="https://img.shields.io/github/license/ienxternal/wheelwisdom"><img alt="GitHub code size in bytes" src="https://img.shields.io/github/languages/code-size/ienxternal/wheelwisdom"><img alt="GitHub last commit (by committer)" src="https://img.shields.io/github/last-commit/ienxternal/wheelwisdom"></p>
+
 
 
 # Wheel Wisdom
