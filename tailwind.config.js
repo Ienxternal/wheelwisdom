@@ -1,10 +1,13 @@
 /* * @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./src/**/*.{html,js}",
-            "./views/layouts/*.handlebars'",
-            "./views/**/*.handlebars'"],
+            "./views/layouts/.handlebars",
+            "./views/**/*.handlebars"],
   theme: {
     extend: {
+      fontFamily: {
+      'maven': ['Maven Pro', 'sans-serif'],
+      },
       colors: {
         transparent: 'transparent',
         current: 'currentColor',
