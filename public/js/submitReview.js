@@ -17,17 +17,13 @@ window.addEventListener('load', async () => {
   }
 });
 
-// Helper function to display the reviews on the page
 function displayReviews(reviews) {
-  // Access the DOM element where you want to display the reviews
   const reviewsContainer = document.getElementById('reviewsContainer');
   const reviewText = reviewInput.value.trim();
   const username = usernameInput.value;
 
-  // Clear the existing reviews from the container
   reviewsContainer.innerHTML = '';
 
-  // Iterate over the reviews and create HTML elements to display them
   reviews.forEach(review => {
     const reviewElement = document.createElement('div');
     reviewElement.classList.add('flex', 'space-x-4', 'text-sm', 'text-gray-500','border-b', 'border-gray-300');
@@ -56,7 +52,25 @@ function displayReviews(reviews) {
     
     const rating = document.createElement('div');
     rating.classList.add('mt-4', 'flex', 'items-center');
-    rating.textContent = '5 of 5';
+    const starRatingContainer = document.createElement('div');
+starRatingContainer.classList.add('flex', 'items-center');
+
+const starSvg = '<svg class="text-yellow-400 h-5 w-5 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">' +
+  '<path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />' +
+  '</svg>';
+
+for (let i = 0; i < 5; i++) {
+  const starSvgElement = document.createElement('svg');
+  starSvgElement.classList.add('text-yellow-400', 'h-5', 'w-5', 'flex-shrink-0');
+  starSvgElement.setAttribute('viewBox', '0 0 20 20');
+  starSvgElement.setAttribute('fill', 'currentColor');
+  starSvgElement.setAttribute('aria-hidden', 'true');
+  starSvgElement.innerHTML = starSvg;
+
+  starRatingContainer.appendChild(starSvgElement);
+}
+
+rating.appendChild(starRatingContainer);
     
 
     const reviewTextElement = document.createElement('div');
@@ -75,7 +89,6 @@ function displayReviews(reviews) {
   });
 }
 
-// Add event listener to the review form
 const reviewForm = document.getElementById('review-form');
 const reviewInput = document.getElementById('review-input');
 const reviewsContainer = document.getElementById('reviewsContainer');
@@ -110,7 +123,26 @@ reviewForm.addEventListener('submit', async (event) => {
 
     const rating = document.createElement('div');
     rating.classList.add('mt-4', 'flex', 'items-center');
-    rating.textContent = '{{> 5star}}';
+   
+    const starRatingContainer = document.createElement('div');
+starRatingContainer.classList.add('flex', 'items-center');
+
+const starSvg = '<svg class="text-yellow-400 h-5 w-5 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">' +
+  '<path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />' +
+  '</svg>';
+
+for (let i = 0; i < 5; i++) {
+  const starSvgElement = document.createElement('svg');
+  starSvgElement.classList.add('text-yellow-400', 'h-5', 'w-5', 'flex-shrink-0');
+  starSvgElement.setAttribute('viewBox', '0 0 20 20');
+  starSvgElement.setAttribute('fill', 'currentColor');
+  starSvgElement.setAttribute('aria-hidden', 'true');
+  starSvgElement.innerHTML = starSvg;
+
+  starRatingContainer.appendChild(starSvgElement);
+}
+rating.appendChild(starRatingContainer);
+
     const reviewTextElement = document.createElement('div');
     reviewTextElement.classList.add('prose', 'prose-sm', 'mt-4', 'max-w-none', 'text-gray-500');
     const reviewParagraph = document.createElement('p');
@@ -132,8 +164,8 @@ reviewForm.addEventListener('submit', async (event) => {
   console.log(vehicleId)
   const reviewData = {
     review: reviewText,
-    vehicle_id: vehicleId, // Replace with the appropriate vehicle ID
-    r_user: username // Replace with the appropriate user ID
+    vehicle_id: vehicleId,
+    r_user: username 
   };
 
   if (!reviewData.review) {
@@ -150,130 +182,9 @@ reviewForm.addEventListener('submit', async (event) => {
   fetch('/reviews', requestOptions)
     .then(response => response.json())
     .then(data => {
-      // Handle the response data if needed
       console.log(data);
     })
     .catch(error => {
-      // Handle any errors that occur during the request
       console.error('Error:', error);
     });
 });
-
-
-
-
-
-//ORIGINAL CODE
-// const reviewForm = document.getElementById('review-form');
-// const reviewInput = document.getElementById('review-input');
-// const reviewsContainer = document.getElementById('reviewsContainer');
-
-// reviewForm.addEventListener('submit', (event) => {
-//   event.preventDefault();
-
-//   const reviewText = reviewInput.value.trim();
-
-//   if (reviewText !== '') {
-//     const reviewElement = document.createElement('p');
-//     reviewElement.textContent = reviewText;
-//     reviewsContainer.appendChild(reviewElement);
-
-//     reviewInput.value = ''; // Clear the input field
-//   }
-  
-//   const reviewData = {
-//     review: reviewText,
-//     vehicle_id: 1, // Replace with the appropriate vehicle ID
-//     r_user: 1 // Replace with the appropriate user ID
-//   };
-
-//   if (!reviewData.review) {
-//     alert('Please enter a review');
-//     return;
-//   }
-
-//   const requestOptions = {
-//     method: 'POST',
-//     headers: { 'Content-Type': 'application/json' },
-//     body: JSON.stringify(reviewData)
-//   };
-
-//   fetch('/reviews', requestOptions)
-//     .then(response => response.json())
-//     .then(data => {
-//       // Handle the response data if needed
-//       console.log(data);
-//     })
-//     .catch(error => {
-//       // Handle any errors that occur during the request
-//       console.error('Error:', error);
-//     });
-// });
-
-
-
-
-
-
-
-
-
-// const reviewForm = document.getElementById('review-form');
-// const reviewInput = document.getElementById('review-input');
-
-// reviewForm.addEventListener('submit', (event) => {
-//   event.preventDefault();
-
-//   const reviewData = {
-//     review: reviewInput.value.trim(),
-//     vehicle_id: 1, // Replace with the appropriate vehicle ID
-//     r_user: 1 // Replace with the appropriate user ID
-//   };
-
-//   if (!reviewData.review) {
-//     alert('Please enter a review');
-//     return;
-//   }
-
-//   const requestOptions = {
-//     method: 'POST',
-//     headers: { 'Content-Type': 'application/json' },
-//     body: JSON.stringify(reviewData)
-//   };
-
-//   fetch('/reviews', requestOptions)
-//     .then(response => response.json())
-//     .then(data => {
-//       // Handle the response data if needed
-//       console.log(data);
-//     })
-//     .catch(error => {
-//       // Handle any errors that occur during the request
-//       console.error('Error:', error);
-//     });
-// });
-
-
-// const reviewForm = document.getElementById('review-form');
-// const reviewInput = document.getElementById('review-input');
-
-// reviewForm.addEventListener('submit', (event) => {
-//   if (reviewInput.value.trim() === '') {
-//     event.preventDefault();
-//     alert('Please enter a review');
-//   } else {
-//     // Update the form's action attribute to the correct route
-//     reviewForm.action = '/reviews';
-//     console.log('Form action:', reviewForm.action);
-//   }
-// });
-
-// const reviewForm = document.getElementById('review-form');
-// const reviewInput = document.getElementById('review-input');
-
-// reviewForm.addEventListener('submit', (event) => {
-//   if (reviewInput.value.trim() === '') {
-//     event.preventDefault();
-//     alert('Please enter a review');
-//   }
-// });
