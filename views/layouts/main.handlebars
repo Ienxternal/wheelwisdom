@@ -38,7 +38,9 @@
             {{#if loggedIn}}
                 <div class="mx-auto max-w-7xl px-2 sm:px-4 lg:px-8">
         <div class="relative flex items-center justify-between">
+          
           <div class="flex flex-1 justify-center px-2 lg:ml-6 lg:justify-end">
+             <form action="/search1" method="GET">
             <div class="w-full max-w-lg lg:max-w-xs">
               <label for="search" class="sr-only">Search</label>
               <div class="relative">
@@ -48,6 +50,7 @@
                 <input type="text" name="search" id="search-bar" class="bg-white border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-owlsearch3 focus:border-owlsearch3 block w-full pl-10  dark:bg-owlsearch dark:border-gray-600 dark:placeholder-gray-400 dark:text-black dark:focus:ring-owlsearch3 dark:focus:border-owlsearch3" placeholder="Search..." required>
               </div>
             </div>
+            </form>
           </div>
           <div class="hidden lg:ml-4 lg:block">
             <div class="flex items-center">

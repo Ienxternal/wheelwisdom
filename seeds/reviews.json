@@ -2,31 +2,231 @@
     {
         "review": "This compact car embodies reliability and fuel efficiency, making it a practical choice for everyday commuting. With its compact size and agile handling, it offers a nimble and enjoyable driving experience, perfect for urban environments.",
         "vehicle_id" : 1,
-        "r_user":1
+        "r_user":"John"
         
     },
     {
-        "review": "placeholder",
+        "review": "I've been a proud owner for years, and it's been a reliable companion. The simple yet sturdy design, coupled with its efficient engine, makes it a practical and economical choice. The compact size is perfect for city driving, and the fuel efficiency is impressive. It may not have all the bells and whistles of modern cars, but its reliability and nostalgia make it a true classic.",
+        "vehicle_id" : 1,
+        "r_user":"Jessica"
+        
+    },
+    {
+        "review": "This truck is a true workhorse with incredible towing capability and payload capacity. The ride quality is surprisingly smooth for such a powerful vehicle, and the interior is well-designed and packed with convenient features. ",
         "vehicle_id" : 2,
-        "r_user":2
+        "r_user":"Liz"
         
     },
     {
-        "review": "placeholder",
-        "vehicle_id" : 3,
-        "r_user":3
-        
-    },
-    {
-        "review": "placeholder",
+        "review": "The 1970 Corvette Stingray is a classic beauty that offers stunning design and exhilarating performance. With its sleek body, powerful V8 engine, and comfortable interior, it delivers an unforgettable driving experience.",
         "vehicle_id" : 4,
-        "r_user":4
+        "r_user":"Doge"
         
     },
     {
-        "review": "placeholder",
+        "review": "exceptional fuel economy, making it an economical choice for daily commuting and long drives. With its efficient engine and aerodynamic design, it achieves impressive mileage, allowing you to go further while saving on fuel costs.",
         "vehicle_id" : 5,
-        "r_user":5
+        "r_user":"Kasey T."
         
-    }
+    },
+    {
+        "review": "This car embodies reliability and fuel efficiency, making it a practical choice for everyday commuting. With its size and agile handling, it offers a nimble and enjoyable driving experience, perfect for urban environments.",
+        "vehicle_id": 3,
+        "r_user": "John"
+      },
+      {
+        "review": "The performance of this vehicle is exceptional. Its sleek design and advanced features provide a luxurious driving experience. Whether on city streets or highways, this car delivers a smooth and comfortable ride.",
+        "vehicle_id": 7,
+        "r_user": "Sophia"
+      },
+      {
+        "review": "I am extremely satisfied with this car's reliability and performance. It combines style and functionality, making it a great choice for both daily commutes and long road trips. I highly recommend it.",
+        "vehicle_id": 4,
+        "r_user": "Mohammed"
+      },
+      {
+        "review": "With its impressive fuel efficiency and spacious interior, this vehicle is perfect for families. It offers a smooth and quiet ride, ensuring a comfortable journey for everyone on board.",
+        "vehicle_id": 9,
+        "r_user": "Isabella"
+      },
+      {
+        "review": "This car is a true gem. Its powerful engine and responsive handling make it a joy to drive. The luxurious features and attention to detail elevate the overall driving experience.",
+        "vehicle_id": 6,
+        "r_user": "Chen"
+      },
+      {
+        "review": "I love how this vehicle combines elegance and practicality. Its sleek design turns heads wherever I go, and its spacious cabin provides ample legroom and comfort for all passengers.",
+        "vehicle_id": 2,
+        "r_user": "Emma"
+      },
+      {
+        "review": "Driving this car is a pleasure. Its sporty look, along with its powerful engine and precise handling, offers an exhilarating experience. It's the perfect choice for those who appreciate performance.",
+        "vehicle_id": 8,
+        "r_user": "Santiago"
+      },
+      {
+        "review": "This vehicle exceeds my expectations in every way. Its advanced safety features give me peace of mind, while its modern design and technology make every drive enjoyable.",
+        "vehicle_id": 5,
+        "r_user": "Aisha"
+      },
+      {
+        "review": "I am impressed with the overall quality and reliability of this car. It's comfortable, fuel-efficient, and offers a smooth ride. It's definitely a great value for the price.",
+        "vehicle_id": 1,
+        "r_user": "Yusuf"
+      },
+      {
+        "review": "This car is a true workhorse. It combines power and versatility, making it suitable for both off-road adventures and city driving. It's rugged yet comfortable, perfect for any terrain.",
+        "vehicle_id": 10,
+        "r_user": "Olivia"
+      },
+      {
+        "review": "I am amazed by the fuel efficiency of this vehicle. It saves me money on gas without compromising on performance. The stylish design and comfortable interior are added bonuses.",
+        "vehicle_id": 3,
+        "r_user": "Javier"
+      },
+      {
+        "review": "This car offers a smooth and comfortable ride, even on long journeys. Its spacious cabin and advanced features make it an ideal choice for families. I'm extremely satisfied with my purchase.",
+        "vehicle_id": 7,
+        "r_user": "Luna"
+      },
+      {
+        "review": "With its sleek design and powerful engine, this car is a head-turner. It handles beautifully and provides a thrilling driving experience. I couldn't be happier with my decision to buy it.",
+        "vehicle_id": 4,
+        "r_user": "Mohamed"
+      },
+      {
+        "review": "This vehicle is a perfect blend of style and functionality. It offers a comfortable and quiet ride, while its advanced technology and safety features provide peace of mind on the road.",
+        "vehicle_id": 9,
+        "r_user": "Sofia"
+      },
+      {
+        "review": "I am impressed with the performance and reliability of this car. It offers great fuel efficiency without compromising on power. The spacious interior and modern features add to its appeal.",
+        "vehicle_id": 6,
+        "r_user": "Hiroshi"
+      },
+      {
+        "review": "Driving this car is a pleasure. Its smooth acceleration and responsive handling make every journey enjoyable. The elegant design and luxurious features make it stand out from the crowd.",
+        "vehicle_id": 2,
+        "r_user": "Lila"
+      },
+      {
+        "review": "This vehicle provides a comfortable and refined driving experience. Its powerful engine and precise handling make it a joy to drive. I highly recommend it to anyone in search of a reliable car.",
+        "vehicle_id": 8,
+        "r_user": "Ravi"
+      },
+      {
+        "review": "I am in love with this car's design and performance. It offers a perfect balance between comfort and sportiness. The advanced technology and safety features make it a top choice for me.",
+        "vehicle_id": 5,
+        "r_user": "Priya"
+      },
+      {
+        "review": "This car has exceeded my expectations. Its reliable performance and stylish looks make it a standout choice. The spacious interior and comfortable seats provide a pleasurable driving experience.",
+        "vehicle_id": 1,
+        "r_user": "Khaled"
+      },
+      {
+        "review": "I am thrilled with the off-road capabilities of this vehicle. It tackles rough terrains with ease, while still offering a comfortable ride on city streets. It's a great choice for adventure enthusiasts.",
+        "vehicle_id": 10,
+        "r_user": "Ava"
+      },
+      {
+        "review": "This car embodies reliability and fuel efficiency, making it a practical choice for everyday commuting. With its size and agile handling, it offers a nimble and enjoyable driving experience, perfect for urban environments.",
+        "vehicle_id": 1,
+        "r_user": "John"
+      },
+      {
+        "review": "I'm impressed by the performance and versatility of this vehicle. It combines power and efficiency seamlessly, making it a great option for both long road trips and city driving. Highly recommended!",
+        "vehicle_id": 2,
+        "r_user": "Mia"
+      },
+      {
+        "review": "As an environmentally conscious driver, I couldn't be happier with this car's eco-friendly features. It runs smoothly and has excellent mileage, reducing my carbon footprint without compromising on style.",
+        "vehicle_id": 3,
+        "r_user": "Mohammed"
+      },
+      {
+        "review": "This vehicle strikes the perfect balance between comfort and practicality. The spacious interior, advanced safety features, and smooth ride make it ideal for families and road trips. I'm extremely satisfied with my purchase.",
+        "vehicle_id": 4,
+        "r_user": "Sophia"
+      },
+      {
+        "review": "With its sleek design and cutting-edge technology, this car is an absolute head-turner. I constantly receive compliments on its appearance, and the performance on the road is equally impressive.",
+        "vehicle_id": 5,
+        "r_user": "Hiroshi"
+      },
+      {
+        "review": "I've owned several cars in my lifetime, but this one takes the cake. The reliability and durability of this vehicle are unmatched. It has become my go-to choice for any adventure, whether it's a weekend getaway or a cross-country trip.",
+        "vehicle_id": 1,
+        "r_user": "Emma"
+      },
+      {
+        "review": "This car has exceeded my expectations in every way. The fuel efficiency is outstanding, and it handles like a dream. Whether I'm maneuvering through busy city streets or cruising on the highway, it delivers an exceptional driving experience.",
+        "vehicle_id": 2,
+        "r_user": "Ahmed"
+      },
+      {
+        "review": "I love how this vehicle combines style and functionality effortlessly. It has a sleek exterior design that turns heads wherever I go, and the interior is thoughtfully designed with comfort and convenience in mind.",
+        "vehicle_id": 3,
+        "r_user": "Olivia"
+      },
+      {
+        "review": "This car is a game-changer for me. The advanced safety features and reliable performance give me peace of mind on the road. It's also surprisingly spacious and comfortable, making every journey enjoyable.",
+        "vehicle_id": 4,
+        "r_user": "Liam"
+      },
+      {
+        "review": "I'm thrilled with the overall performance of this vehicle. It handles exceptionally well, and the responsive acceleration adds a touch of excitement to my daily commute. It's the perfect combination of practicality and fun.",
+        "vehicle_id": 5,
+        "r_user": "Isabella"
+      },
+      {
+        "review": "I can't say enough good things about this car. It's incredibly fuel-efficient, saving me money on gas while being kind to the environment. The spacious interior and smooth ride make it a joy to drive, even on long journeys.",
+        "vehicle_id": 1,
+        "r_user": "Sebastian"
+      },
+      {
+        "review": "This vehicle is a true workhorse. It has the power and versatility to handle any task I throw at it. Whether I'm hauling equipment or going off-road, it never fails to deliver top-notch performance.",
+        "vehicle_id": 2,
+        "r_user": "Ava"
+      },
+      {
+        "review": "I'm amazed by the attention to detail in this car's design. Every feature has been thoughtfully crafted to enhance the driving experience. From the intuitive infotainment system to the comfortable seats, it's a pleasure to own.",
+        "vehicle_id": 3,
+        "r_user": "Benjamin"
+      },
+      {
+        "review": "This car has completely changed my perspective on electric vehicles. The range is impressive, and the instant torque provides an exhilarating driving experience. It's not just an eco-friendly choice; it's a thrilling one too.",
+        "vehicle_id": 4,
+        "r_user": "Aria"
+      },
+      {
+        "review": "I'm in love with this vehicle's sleek and modern design. It stands out in a sea of ordinary cars, and the performance matches its looks. It's a true head-turner that never fails to put a smile on my face.",
+        "vehicle_id": 5,
+        "r_user": "Yuto"
+      },
+      {
+        "review": "This car has been a reliable companion on my daily commute. It's fuel-efficient, comfortable, and handles exceptionally well. I couldn't ask for more in a vehicle designed for city driving.",
+        "vehicle_id": 1,
+        "r_user": "Sofia"
+      },
+      {
+        "review": "I feel safe and secure every time I step into this car. The advanced safety features give me peace of mind, and the solid build quality inspires confidence on the road. It's a reliable partner for my everyday adventures.",
+        "vehicle_id": 2,
+        "r_user": "Muhammad"
+      },
+      {
+        "review": "I can't get enough of this vehicle's luxurious features. The premium interior materials, comfortable seats, and cutting-edge technology create an unparalleled driving experience. It's a car that indulges your senses.",
+        "vehicle_id": 3,
+        "r_user": "Charlotte"
+      },
+      {
+        "review": "This car's performance is simply outstanding. The powerful engine delivers an exhilarating acceleration, and the precise handling makes every drive a thrill. It's a true sports car in every sense of the word.",
+        "vehicle_id": 4,
+        "r_user": "Noah"
+      },
+      {
+        "review": "I'm impressed by the efficiency of this vehicle's hybrid system. It seamlessly switches between electric and gasoline power, maximizing fuel economy without sacrificing performance. It's a win-win situation.",
+        "vehicle_id": 5,
+        "r_user": "Sophie"
+      }
 ]

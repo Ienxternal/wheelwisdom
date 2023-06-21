@@ -11,7 +11,7 @@ router.get('/', async (req, res) => {
   });
 });
 
-router.get('/search', async (req, res) => {
+router.get('/search1', async (req, res) => {
   if (!req.session.loggedIn) {
     res.redirect('/pricing');
   }

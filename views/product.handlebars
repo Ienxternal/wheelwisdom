@@ -1,5 +1,3 @@
-
-
 {{#if results.length}}
 
 {{#each results}}
@@ -15,12 +13,12 @@
       </div>
 
       <!-- Product details -->
-      <div class="mx-auto mt-14 max-w-2xl sm:mt-16 lg:col-span-3 lg:row-span-2 lg:row-end-2 lg:mt-0 lg:max-w-none">
-        <div class="flex flex-col-reverse">
+      <div class=" bg-white px-5 pt-3 rounded-xl mx-auto mt-14 max-w-2xl sm:mt-16 lg:col-span-3 lg:row-span-2 lg:row-end-2 lg:mt-0 lg:max-w-none">
+        <div class="flex flex-col-reverse ">
           <div class="mt-4">
             <h1 class="text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl">{{year}} {{manufacturer}} {{model}}</h1>
             <h2 id="information-heading" class="sr-only">Product information</h2>
-            <p class="mt-2 text-sm text-gray-500" data-vehicle-id="{{this.id}}"><p>Vehicle ID: {{this.id}}</p></p>
+            <p class="mt-2 text-xs text-gray-500" data-vehicle-id="{{this.id}}"><p>Vehicle ID: {{this.id}}</p></p>
           </div>
 
           <div>
@@ -47,7 +45,7 @@
           </div>
         </div>
 
-        <p class="mt-6 text-gray-500">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem facilis rerum inventore atque sequi, distinctio ducimus, saepe itaque voluptatibus quia quo natus eligendi, iste cupiditate.</p>
+        <p class="mt-6 text-gray-500">{{description}}</p>
 
   
 
@@ -55,16 +53,20 @@
           <h3 class="text-sm font-medium text-gray-900">Highlights</h3>
           <div class="prose prose-sm mt-4 text-gray-500">
             <ul role="list">
-              <li>Lorem ipsum dolor sit.</li>
-              <li>Lorem ipsum dolor sit amet consectetur.</li>
-              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, fugit.</li>
+              <li>{{highlights}}</li>
+              <li>This car is one of the many cars available.</li>
+
             </ul>
           </div>
         </div>
 
         <div class="mt-10 border-t border-gray-200 pt-10">
-          <h3 class="text-sm font-medium text-gray-900">Placeholder</h3>
-          <p class="mt-4 text-sm text-gray-500">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto illum fugiat quaerat nulla necessitatibus sit. <a href="#" class="font-medium text-indigo-600 hover:text-indigo-500">Placeholder</a></p>
+          <p class="mt-4 text-sm text-gray-500">Add to your profile now!  <button type="button" class="rounded-full bg-tealowl2 p-1 text-white shadow-sm hover:bg-tealowl2 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
+  <svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+    <path d="M10.75 4.75a.75.75 0 00-1.5 0v4.5h-4.5a.75.75 0 000 1.5h4.5v4.5a.75.75 0 001.5 0v-4.5h4.5a.75.75 0 000-1.5h-4.5v-4.5z" />
+  </svg>
+</button>
+</p>
         </div>
 
         <div class="mt-10 border-t border-gray-200 pt-10">
@@ -104,8 +106,8 @@
             <div class="-mb-px flex space-x-8" aria-orientation="horizontal" role="tablist">
               <!-- Selected: "border-indigo-600 text-indigo-600", Not Selected: "border-transparent text-gray-700 hover:border-gray-300 hover:text-gray-800" -->
               <button id="tab-reviews" class="border-transparent text-gray-700 hover:border-gray-300 hover:text-gray-800 whitespace-nowrap border-b-2 py-6 text-sm font-medium" aria-controls="tab-panel-reviews" role="tab" type="button">Customer Reviews</button>
-              <button id="tab-faq" class="border-transparent text-gray-700 hover:border-gray-300 hover:text-gray-800 whitespace-nowrap border-b-2 py-6 text-sm font-medium" aria-controls="tab-panel-faq" role="tab" type="button">FAQ</button>
-              <button id="tab-license" class="border-transparent text-gray-700 hover:border-gray-300 hover:text-gray-800 whitespace-nowrap border-b-2 py-6 text-sm font-medium" aria-controls="tab-panel-license" role="tab" type="button">License</button>
+              <button id="tab-faq" class="border-transparent text-gray-700 hover:border-gray-300 hover:text-gray-800 whitespace-nowrap border-b-2 py-6 text-sm font-medium" aria-controls="tab-panel-faq" role="tab" type="button">Price Analysis</button>
+              <button id="tab-license" class="border-transparent text-gray-700 hover:border-gray-300 hover:text-gray-800 whitespace-nowrap border-b-2 py-6 text-sm font-medium" aria-controls="tab-panel-license" role="tab" type="button">Specs</button>
             </div>
           </div>
 
@@ -147,12 +149,12 @@
               <div class="flex-none py-10">
               <img src="/images/owlsmaincircle.png" alt="" class="h-10 w-10 rounded-full bg-gray-100"></div>
               <div class="py-10 border-b border-gray-200">
-                <h3 class="font-medium text-gray-900">Gibbons</h3>
+                <h3 class="font-medium text-gray-900">Owl Gibbons</h3>
                 <p><time datetime="2021-07-12">July 12, 2021</time></p>
                 <div class="mt-4 flex items-center">{{> 5star}}</div>
                 <p class="sr-only">5 out of 5 stars</p>
                 <div class="prose prose-sm mt-4 max-w-none text-gray-500">
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, voluptatem. Et, impedit explicabo expedita placeat quaerat pariatur repellendus doloribus harum? Iste dignissimos molestiae sed deserunt? Corrupti minus hic vel asperiores, perspiciatis illum! Non, provident. Ducimus illum odio magnam facilis distinctio consectetur repellendus iure eveniet! Aliquam iusto accusamus corporis quod voluptates!</p>
+                  <p>Behind the wheel of the this Car, I was pleasantly surprised by its performance. The engine provided ample power, making acceleration smooth and responsive. The handling was precise, and the car felt stable even during cornering. The suspension system effectively absorbed bumps on the road, resulting in a comfortable and enjoyable driving experience.</p>
                 </div>
               </div>
             </div>
@@ -161,12 +163,12 @@
               <div class="flex-none py-10">
               <img src="/images/owlsmaincircle.png" alt="" class="h-10 w-10 rounded-full bg-gray-100"></div>
               <div class="py-10 border-b border-gray-200">
-                <h3 class="font-medium text-gray-900">Gibbons</h3>
-                <p><time datetime="2021-07-12">July 12, 2021</time></p>
+                <h3 class="font-medium text-gray-900">Jenny K.</h3>
+                <p><time datetime="2021-07-12">June 12, 2025</time></p>
                 <div class="mt-4 flex items-center">{{> 5star}}</div>
                 <p class="sr-only">5 out of 5 stars</p>
                 <div class="prose prose-sm mt-4 max-w-none text-gray-500">
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, voluptatem. Et, impedit explicabo expedita placeat quaerat pariatur repellendus doloribus harum? Iste dignissimos molestiae sed deserunt? Corrupti minus hic vel asperiores, perspiciatis illum! Non, provident. Ducimus illum odio magnam facilis distinctio consectetur repellendus iure eveniet! Aliquam iusto accusamus corporis quod voluptates!</p>
+                  <p>This Car boasts a sleek and modern design that appeals to a wide range of drivers. Its aerodynamic curves and stylish lines give it a contemporary look. The exterior design is complemented by well-crafted details, such as chrome accents and LED headlights, adding to its overall aesthetic appeal.</p>
                 </div>
               </div>
             </div>
@@ -181,7 +183,6 @@
    </div>
   </div>
 
-</div>
 <script src="/js/submitReview.js"></script>
 
       {{/each}}
