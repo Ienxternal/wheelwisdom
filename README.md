@@ -58,6 +58,9 @@ WheelWisdom was built with the following technologies:
 - Node.js
 - Express.js
 - MySQL
+- DB Diagram
+- Figma
+- Postman
 
 ## Future Development: 
 
