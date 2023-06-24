@@ -8,6 +8,7 @@ class User extends Model {
   }
 }
 
+//Models creating column criteria
 User.init(
   {
     id: {

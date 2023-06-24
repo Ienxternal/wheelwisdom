@@ -1,12 +1,11 @@
-// Get references to the necessary elements
+// Get references to the necessary elements for the profile dropdown button.
 const userMenu = document.getElementById('user-menu-items');
 const userMenuButton = document.getElementById('user-menu-button');
 const userProfileButton = document.getElementById('user-menu-item-0');
 
-
 // Add event listener to the button
 userMenuButton.addEventListener('click', () => {
-  // Toggle the visibility of the dropdown menu with a transition effect
+// Toggle the visibility of the dropdown menu with a transition effect
   const expanded = userMenuButton.getAttribute('aria-expanded') === 'true' || false;
   userMenuButton.setAttribute('aria-expanded', !expanded);
 
@@ -39,5 +38,5 @@ document.addEventListener('click', (event) => {
 
 userProfileButton.addEventListener('click', () => {
   // Redirect to the profile page
-  window.location.href = '/profile'; // Replace '/profile' with the actual URL of your Handlebars page
+  window.location.href = '/profile';
 });

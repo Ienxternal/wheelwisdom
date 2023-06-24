@@ -3,6 +3,7 @@ const sequelize = require('../config/connection');
 
 class Vehicles extends Model {}
 
+//Models creating column criteria
 Vehicles.init(
     {
         id: {
