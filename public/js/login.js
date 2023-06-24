@@ -1,10 +1,4 @@
-
-// const loginFormHandler = async (event) => {
-//   event.preventDefault();
-//       alert('Failed to login');
-// };
-
-
+//Login JS links IDs to DB
 const loginFormHandler = async (event) => {
   event.preventDefault();
 
@@ -25,11 +19,6 @@ const loginFormHandler = async (event) => {
     }
   }
 };
-
-
-
-
-
 const signupFormHandler = async (event) => {
   event.preventDefault();
       alert('Failed to sign up.');

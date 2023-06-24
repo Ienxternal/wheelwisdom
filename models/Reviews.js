@@ -3,6 +3,7 @@ const sequelize = require('../config/connection');
 
 class Reviews extends Model {}
 
+//Models creating column criteria
 Reviews.init(
     {
     id: {

@@ -1,3 +1,4 @@
+// Create signup form JS
 const signupFormHandler = async (event) => {
   event.preventDefault();
 

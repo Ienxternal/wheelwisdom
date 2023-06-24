@@ -1,16 +1,15 @@
 <!doctype html>
 <html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/css/output.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/output.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap" rel="stylesheet">
-  <script src="https://unpkg.com/tailwindcss-jit-cdn"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/tailwindcss-jit-cdn"></script>
 </head>
 <body>
-
     <header class="relative">
       <div class="bg-tealowl py-2">
         <nav class="relative mx-1 flex max-w-8xl items-center justify-between px-6" aria-label="Global">
@@ -18,19 +17,20 @@
             <div class="flex w-full items-center justify-between md:w-auto">
               <a href="/">
                 <span class="sr-only">Wheel Wisdom</span>
-                <img class="h-8 w-auto sm:h-10" src="/images/owls1icon.png" alt="">
+                <img class="h-8 w-auto sm:h-10" src="/images/owls1icon.png" alt="Wheel Wisdoms Logo">
                 <input type="hidden" id="username-input" name="username" value="{{username}}">
               </a>
               <div class="-mr-2 flex items-center md:hidden">
                 <button type="button" class="focus-ring-inset inline-flex items-center justify-center rounded-md bg-gray-900 p-2 text-gray-400 hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-white" aria-expanded="false">
                   <span class="sr-only">Open main menu</span>
                   <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                   <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5">
                   </svg>
                 </button>
               </div>
             </div>
-             {{#if loggedIn}}
+            {{#if loggedIn}}
+            {{!-- Displays different navigation setting when logged in --}}
             <div class="hidden space-x-8 md:ml-10 md:flex">
               <a href="/" class="text-base font-maven text-white hover:text-gray-300">Home</a>
               <a href="/garage" class="text-base font-maven text-white hover:text-gray-300">Dashboard</a>
@@ -39,6 +39,7 @@
             </div>
           </div>
             {{else}}
+            {{!-- Displays different navigation links when not logged in --}}
            <div class="hidden space-x-8 md:ml-10 md:flex">
               <a href="/features" class="text-base font-maven text-white hover:text-gray-300">Features</a>
               <a href="/#testimonials" class="text-base font-maven text-white hover:text-gray-300">Testimonials</a>
@@ -47,40 +48,37 @@
               </div>
               </div>
             {{/if}}
-          
-          <div class="hidden md:flex md:items-center md:space-x-6">
+            <div class="hidden md:flex md:items-center md:space-x-6">
             {{#if loggedIn}}
-                <div class="mx-auto max-w-7xl px-2 sm:px-4 lg:px-8">
-        <div class="relative flex items-center justify-between">
-          
-          <div class="flex flex-1 justify-center px-2 lg:ml-6 lg:justify-end">
-             <form action="/search1" method="GET">
-            <div class="w-full max-w-lg lg:max-w-xs">
-              <label for="search" class="sr-only font-maven">Search</label>
-              <div class="relative">
-                <div class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
-      <svg aria-hidden="true" class="w-5 h-5 text-gray-500 dark:text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"></path></svg>
-                </div>
-                <input type="text" name="search" id="search-bar" class="bg-white border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-owlsearch3 focus:border-owlsearch3 block w-full pl-10  dark:bg-owlsearch dark:border-gray-600 dark:placeholder-gray-400 dark:text-black dark:focus:ring-owlsearch3 dark:focus:border-owlsearch3" placeholder="Search..." required>
-              </div>
-            </div>
-            </form>
-          </div>
+            <div class="mx-auto max-w-7xl px-2 sm:px-4 lg:px-8">
+                <div class="relative flex items-center justify-between"> 
+                    <div class="flex flex-1 justify-center px-2 lg:ml-6 lg:justify-end">
+                        <form action="/search1" method="GET">
+                        <div class="w-full max-w-lg lg:max-w-xs">
+                            <label for="search" class="sr-only font-maven">Search</label>
+                            <div class="relative">
+                                <div class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
+                                    <svg aria-hidden="true" class="w-5 h-5 text-gray-500 dark:text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"></path></svg>
+                                </div>
+                        <input type="text" name="search" id="search-bar" class="bg-white border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-owlsearch3 focus:border-owlsearch3 block w-full pl-10  dark:bg-owlsearch dark:border-gray-600 dark:placeholder-gray-400 dark:text-black dark:focus:ring-owlsearch3 dark:focus:border-owlsearch3" placeholder="Search..." required>
+                            </div>
+                        </div>
+                        </form>
+                    </div>
           <div class="hidden lg:ml-4 lg:block">
             <div class="flex items-center">
               <!-- Profile dropdown -->
-              <div class="relative ml-4 flex-shrink-0" id="user-menu">
- <div>
+              <div class="relative ml-4 flex-shrink-0" id="user-menu"><div>
     <button type="button" class="flex rounded-full" id="user-menu-button" aria-expanded="false" aria-haspopup="true">
       <span class="sr-only">Open user menu</span>
-      <img class="h-8 w-8 rounded-full max-w-none" src="https://images.pexels.com/photos/106685/pexels-photo-106685.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="">
+      <img class="h-8 w-8 rounded-full max-w-none" src="https://images.pexels.com/photos/106685/pexels-photo-106685.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Profile Picture of User">
     </button>
   </div>
 
   <div class="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none opacity-0 transform scale-95 transition-opacity duration-300" role="menu" aria-orientation="vertical" aria-labelledby="user-menu-button" tabindex="-1" id="user-menu-items">
 <div class="py-3 flex items-center">
     <div class="pl-3 mr-2">
-      <img class="h-8 w-8 rounded-full" src="https://images.pexels.com/photos/106685/pexels-photo-106685.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="">
+      <img class="h-8 w-8 rounded-full" src="https://images.pexels.com/photos/106685/pexels-photo-106685.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Profile Picture of User">
     </div>
     <div class="-mt-1 rounded-t-md px-4 py-2 text-sm text-gray-700 max-w-[calc(100%-3rem)]">
       Welcome {{username}}!
@@ -104,17 +102,12 @@
           </div>
         </div>
       </div>
-
-            
-            {{!-- <button id="logout" class="rounded-full bg-tealowl4 px-3.5 py-2 text-sm font-semibold text-white shadow-sm transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-tealowl2 duration-300  focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-tealowl2">Logout</button> --}}
-
             {{else}}
             <a href="/login" class="text-base font-maven text-white hover:text-gray-300">Log in</a>
             <a href="/signup" class="rounded-full bg-tealowl4 px-3.5 py-2 text-sm font-maven text-white shadow-sm transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-tealowl2 duration-300  focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-tealowl2">Sign Up</a>
             {{/if}}
           </div>
         </nav>
-        
       </div>
     </header>
   {{#if loggedIn}}
@@ -122,9 +115,6 @@
   <script src="/js/profiledrop.js"></script>
   {{/if}}
       <div class="bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-teal-300 via-yellow-100 to-teal-300">
-
-
-
         {{{ body }}}
         {{> footer }}
       </div>

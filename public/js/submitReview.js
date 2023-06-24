@@ -8,8 +8,6 @@ window.addEventListener('load', async () => {
     const reviews = await response.json();
     
     const filteredReviews = reviews.filter(review => review.vehicle_id === parseInt(vehicleId));
-    console.log("dndnfjsdnjfs000000000000000000000000000000000000000000000000");
-    console.log(filteredReviews);
     // Display the filtered reviews on the page
     displayReviews(filteredReviews);
   } catch (error) {
@@ -17,13 +15,12 @@ window.addEventListener('load', async () => {
   }
 });
 
+//Creates content for reviews on page loading
 function displayReviews(reviews) {
   const reviewsContainer = document.getElementById('reviewsContainer');
-  const reviewText = reviewInput.value.trim();
-  const username = usernameInput.value;
 
   reviewsContainer.innerHTML = '';
-
+// For each review apply div container and elements to make it look cohesive
   reviews.forEach(review => {
     const reviewElement = document.createElement('div');
     reviewElement.classList.add('flex', 'space-x-4', 'text-sm', 'text-gray-500','border-b', 'border-gray-300');
@@ -89,13 +86,15 @@ rating.appendChild(starRatingContainer);
   });
 }
 
+//Create link for submitting review form.
+
 const reviewForm = document.getElementById('review-form');
 const reviewInput = document.getElementById('review-input');
 const reviewsContainer = document.getElementById('reviewsContainer');
 
 reviewForm.addEventListener('submit', async (event) => {
   event.preventDefault();
-
+// Creates a div container with the correct style when user submits the form
   const reviewText = reviewInput.value.trim();
   const username = usernameInput.value;
 
@@ -123,7 +122,7 @@ reviewForm.addEventListener('submit', async (event) => {
 
     const rating = document.createElement('div');
     rating.classList.add('mt-4', 'flex', 'items-center');
-   
+  
     const starRatingContainer = document.createElement('div');
 starRatingContainer.classList.add('flex', 'items-center');
 
@@ -159,9 +158,7 @@ rating.appendChild(starRatingContainer);
 
     reviewInput.value = ''; // Clear the input field
   }
-
-  console.log("THIS IS IN THE SUBMIT JS@@@@@@@@")
-  console.log(vehicleId)
+//Log review input into database.
   const reviewData = {
     review: reviewText,
     vehicle_id: vehicleId,
